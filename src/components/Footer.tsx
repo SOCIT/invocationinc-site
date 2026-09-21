@@ -26,6 +26,8 @@ export function Footer() {
         <Link href="/privacy">Privacy</Link>
         {" · "}
         <Link href="/terms">Terms</Link>
+        {" · "}
+        <Link href="/billing">Manage billing</Link>
       </p>
     </footer>
   );
