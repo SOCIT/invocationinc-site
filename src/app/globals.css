@@ -691,3 +691,20 @@ body {
   font-weight: 700;
   margin-top: 12px;
 }
+
+.hub-taunt {
+  background: #160f0d;
+  border-radius: 10px;
+  padding: 36px 34px;
+  margin: 10px 0;
+}
+.hub-taunt h2 {
+  color: #fff;
+  margin-top: 0;
+}
+.hub-taunt p {
+  color: #cbbfae;
+}
+.hub-taunt p:last-child {
+  margin-bottom: 0;
+}

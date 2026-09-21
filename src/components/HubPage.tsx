@@ -135,6 +135,25 @@ export function HubPage() {
           </div>
         </section>
 
+        <section id="private-work" className="hub-taunt">
+          <h2>The work behind the books</h2>
+          <p>
+            Before the books, there was the private work: referral-only, NDA
+            before proposals, $5K up front and $5K mid-delivery. We say no
+            more often than we say yes.
+          </p>
+          <p>
+            Most people will never need an engineer in the room. That&rsquo;s
+            what the books are for &mdash; the complete systems, available
+            to anyone.
+          </p>
+          <p>
+            <a href="/private-work" className="lf-btn lf-btn-ghost">
+              How private work works
+            </a>
+          </p>
+        </section>
+
         <section id="programs">
           <h2>Four programs. Pick your bottleneck.</h2>
           <p>
