@@ -468,13 +468,25 @@ body {
 
 /* ---- Hub (invocationinc.com) ---- */
 .hub-hero {
-  background: #140e0c;
+  background: #140e0c url("/img/hero-desert.jpg") center 35% / cover no-repeat;
   color: #fffaf2;
   padding: 72px 18px 64px;
+  position: relative;
+}
+.hub-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    rgba(20, 14, 12, 0.74),
+    rgba(20, 14, 12, 0.86)
+  );
 }
 .hub-hero-inner {
   max-width: 900px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 .hub-hero-stamp {
   color: #ff3b54;
@@ -511,6 +523,11 @@ body {
 .hub-nav {
   display: flex;
   gap: 18px;
+}
+.hub-logo {
+  height: 30px;
+  width: auto;
+  display: block;
 }
 .hub-grid {
   display: grid;
@@ -562,6 +579,73 @@ body {
 }
 .hub-card .lf-btn {
   margin-top: auto;
+}
+.hub-card-img {
+  display: block;
+  width: calc(100% + 40px);
+  height: 168px;
+  object-fit: cover;
+  margin: -24px -20px 18px;
+}
+.hub-band {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 30px 0 6px;
+}
+@media (min-width: 720px) {
+  .hub-band {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.hub-band figure {
+  margin: 0;
+}
+.hub-band img {
+  display: block;
+  width: 100%;
+  height: 148px;
+  object-fit: cover;
+}
+.hub-band figcaption {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #8a7a6a;
+  padding: 8px 2px 0;
+}
+.hub-founder {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 34px 0;
+  border-top: 1px solid #d7cbb8;
+  margin-top: 10px;
+}
+.hub-founder img {
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+.hub-founder h2 {
+  margin: 0 0 8px;
+  font-size: 26px;
+}
+.hub-founder p {
+  margin: 0;
+  color: #3d332c;
+  font-size: 18px;
+  line-height: 1.55;
+}
+@media (max-width: 560px) {
+  .hub-founder {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .hub-fine {
   color: #3d332c;

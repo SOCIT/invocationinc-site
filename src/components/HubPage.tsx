@@ -5,6 +5,8 @@ const products = [
     price: "$47",
     was: null as string | null,
     note: null as string | null,
+    img: "/img/card-ew2h.jpg",
+    alt: "A path through a misty forest",
     url: "https://invocationinc-ew2h.vercel.app/",
   },
   {
@@ -13,6 +15,8 @@ const products = [
     price: "$9.97",
     was: "$19.97",
     note: null,
+    img: "/img/card-h2typ.jpg",
+    alt: "A red rose in the dark",
     url: "https://invocationinc-h2typ.vercel.app/",
   },
   {
@@ -21,6 +25,8 @@ const products = [
     price: "$47",
     was: "$97",
     note: "Before-proof price",
+    img: "/img/card-h2ct.jpg",
+    alt: "A small island seen from above",
     url: "https://invocationinc-h2ct.vercel.app/",
   },
   {
@@ -29,6 +35,8 @@ const products = [
     price: "$19.97",
     was: "$39.97",
     note: null,
+    img: "/img/card-h2lp.jpg",
+    alt: "A DJ playing to a crowd",
     url: "https://invocationinc-h2lp.vercel.app/",
   },
 ];
@@ -107,6 +115,24 @@ export function HubPage() {
             health management, the 80%, and move toward advanced performance
             enhancement, down to the 1%.
           </p>
+          <div className="hub-band">
+            <figure>
+              <img src="/img/wwd-brain.jpg" alt="A model of the human brain" />
+              <figcaption>Change Events</figcaption>
+            </figure>
+            <figure>
+              <img src="/img/wwd-desk.jpg" alt="A desk late at night" />
+              <figcaption>Corporate &amp; teams</figcaption>
+            </figure>
+            <figure>
+              <img src="/img/wwd-tire.jpg" alt="Training through a tire" />
+              <figcaption>Physical performance</figcaption>
+            </figure>
+            <figure>
+              <img src="/img/wwd-forest.jpg" alt="A path through tall trees" />
+              <figcaption>The road out</figcaption>
+            </figure>
+          </div>
         </section>
 
         <section id="programs">
@@ -119,6 +145,7 @@ export function HubPage() {
           <div className="hub-grid">
             {products.map((p) => (
               <article key={p.name} className="hub-card">
+                <img src={p.img} alt={p.alt} className="hub-card-img" />
                 <h3>{p.name}</h3>
                 <p className="hub-card-line">{p.line}</p>
                 <p className="lf-price-row hub-card-price">
@@ -141,6 +168,19 @@ export function HubPage() {
             Every program is delivered instantly as a PDF ebook. No middleman,
             no subscription, no upsell maze.
           </p>
+        </section>
+
+        <section id="founder" className="hub-founder">
+          <img src="/img/founder.jpg" alt="Jonah Dorman" />
+          <div>
+            <h2>Built by an operator</h2>
+            <p>
+              Invocation was founded by Jonah Dorman, a Human Performance
+              Engineer who spent a decade running a company making weapons
+              components for the U.S. Navy before turning to change work
+              full-time.
+            </p>
+          </div>
         </section>
 
         <section id="start">
