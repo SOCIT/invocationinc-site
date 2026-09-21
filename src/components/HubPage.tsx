@@ -176,9 +176,10 @@ export function HubPage() {
             <h2>Built by an operator</h2>
             <p>
               Invocation was founded by Jonah Dorman, a Human Performance
-              Engineer who spent a decade running a company making weapons
-              components for the U.S. Navy before turning to change work
-              full-time.
+              Engineer who spent decades learning to talk to people and
+              teaching people how to communicate with each other. He still
+              runs a company making weapons components for the U.S. Navy
+              &mdash; and a few other companies besides.
             </p>
           </div>
         </section>
