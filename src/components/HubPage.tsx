@@ -7,7 +7,7 @@ const products = [
     note: null as string | null,
     img: "/img/card-ew2h.jpg",
     alt: "A path through a misty forest",
-    url: "https://invocationinc-ew2h.vercel.app/",
+    url: "https://ew2h.invocationinc.com/",
   },
   {
     name: "How to Train Your Partner",
@@ -17,7 +17,7 @@ const products = [
     note: null,
     img: "/img/card-h2typ.jpg",
     alt: "A red rose in the dark",
-    url: "https://invocationinc-h2typ.vercel.app/",
+    url: "https://h2typ.invocationinc.com/",
   },
   {
     name: "How to Create Time",
@@ -27,7 +27,7 @@ const products = [
     note: "Before-proof price",
     img: "/img/card-h2ct.jpg",
     alt: "A small island seen from above",
-    url: "https://invocationinc-h2ct.vercel.app/",
+    url: "https://h2ct.invocationinc.com/",
   },
   {
     name: "How to Like People",
@@ -37,7 +37,7 @@ const products = [
     note: null,
     img: "/img/card-h2lp.jpg",
     alt: "A DJ playing to a crowd",
-    url: "https://invocationinc-h2lp.vercel.app/",
+    url: "https://h2lp.invocationinc.com/",
   },
 ];
 

@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 const products = [
-  { name: "Eight Weeks to Happy", url: "https://invocationinc-ew2h.vercel.app/" },
-  { name: "How to Train Your Partner", url: "https://invocationinc-h2typ.vercel.app/" },
-  { name: "How to Create Time", url: "https://invocationinc-h2ct.vercel.app/" },
-  { name: "How to Like People", url: "https://invocationinc-h2lp.vercel.app/" },
+  { name: "Eight Weeks to Happy", url: "https://ew2h.invocationinc.com/" },
+  { name: "How to Train Your Partner", url: "https://h2typ.invocationinc.com/" },
+  { name: "How to Create Time", url: "https://h2ct.invocationinc.com/" },
+  { name: "How to Like People", url: "https://h2lp.invocationinc.com/" },
 ];
 
 export function Footer() {
