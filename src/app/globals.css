@@ -558,11 +558,8 @@ body {
   margin: 0 0 14px;
   flex: 1;
 }
-.hub-card-prices {
+.hub-card-price {
   margin: 0 0 16px;
-}
-.hub-card-prices p {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.45;

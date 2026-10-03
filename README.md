@@ -4,9 +4,9 @@ Home for all four Invocation Inc products. No checkout here — each product
 card links out to its own product site.
 
 ## Products
-- Eight Weeks to Happy — ebook $9.99; system (book + workbook) $47 — https://ew2h.invocationinc.com/
+- Eight Weeks to Happy — system (book + workbook) $9.99 — https://ew2h.invocationinc.com/
 - How to Train Your Partner — ebook $9.99 — https://h2typ.invocationinc.com/
-- How to Create Time — ebook $9.99; system (book + workbook) $47 — https://h2ct.invocationinc.com/
+- How to Create Time — system (book + workbook) $9.99 — https://h2ct.invocationinc.com/
 - How to Like People — ebook $9.99 — https://h2lp.invocationinc.com/
 
 ## Dev
