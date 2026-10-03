@@ -560,22 +560,10 @@ body {
 }
 .hub-card-price {
   margin: 0 0 16px;
-}
-.hub-card-price .lf-was {
-  font-size: 20px;
-}
-.hub-card-price .lf-now {
-  font-size: 36px;
-}
-.hub-card-note {
-  display: inline-block;
-  margin-left: 10px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: #8a7a6a;
-  vertical-align: middle;
+  font-size: 16px;
+  line-height: 1.45;
+  color: #3d332c;
 }
 .hub-card .lf-btn {
   margin-top: auto;
