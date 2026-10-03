@@ -2,7 +2,7 @@ const products = [
   {
     name: "Eight Weeks to Happy",
     line: "An 8-week system for taking control of your happiness.",
-    price: "System (book + workbook) — $9.99",
+    price: "$9.99",
     img: "/img/card-ew2h.jpg",
     alt: "A path through a misty forest",
     url: "https://ew2h.invocationinc.com/",
@@ -10,7 +10,7 @@ const products = [
   {
     name: "How to Train Your Partner",
     line: "Communication science for better romantic relationships.",
-    price: "Ebook — $9.99",
+    price: "$9.99",
     img: "/img/card-h2typ.jpg",
     alt: "A red rose in the dark",
     url: "https://h2typ.invocationinc.com/",
@@ -18,7 +18,7 @@ const products = [
   {
     name: "How to Create Time",
     line: "An 8-week system: same 24 hours, different output.",
-    price: "System (book + workbook) — $9.99",
+    price: "$9.99",
     img: "/img/card-h2ct.jpg",
     alt: "A small island seen from above",
     url: "https://h2ct.invocationinc.com/",
@@ -26,7 +26,7 @@ const products = [
   {
     name: "How to Like People",
     line: "A field manual for social fluency: SmileBell™, CLIFFORD, the 4% Rule.",
-    price: "Ebook — $9.99",
+    price: "$9.99",
     img: "/img/card-h2lp.jpg",
     alt: "A DJ playing to a crowd",
     url: "https://h2lp.invocationinc.com/",
