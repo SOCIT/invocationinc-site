@@ -2,9 +2,7 @@ const products = [
   {
     name: "Eight Weeks to Happy",
     line: "An 8-week system for taking control of your happiness.",
-    price: "$47",
-    was: null as string | null,
-    note: null as string | null,
+    prices: ["Ebook — $9.99", "System (book + workbook) — $47"],
     img: "/img/card-ew2h.jpg",
     alt: "A path through a misty forest",
     url: "https://ew2h.invocationinc.com/",
@@ -12,9 +10,7 @@ const products = [
   {
     name: "How to Train Your Partner",
     line: "Communication science for better romantic relationships.",
-    price: "$9.97",
-    was: "$19.97",
-    note: null,
+    prices: ["Ebook — $9.99"],
     img: "/img/card-h2typ.jpg",
     alt: "A red rose in the dark",
     url: "https://h2typ.invocationinc.com/",
@@ -22,9 +18,7 @@ const products = [
   {
     name: "How to Create Time",
     line: "An 8-week system: same 24 hours, different output.",
-    price: "$47",
-    was: "$97",
-    note: "Before-proof price",
+    prices: ["Ebook — $9.99", "System (book + workbook) — $47"],
     img: "/img/card-h2ct.jpg",
     alt: "A small island seen from above",
     url: "https://h2ct.invocationinc.com/",
@@ -32,9 +26,7 @@ const products = [
   {
     name: "How to Like People",
     line: "A field manual for social fluency: SmileBell™, CLIFFORD, the 4% Rule.",
-    price: "$19.97",
-    was: "$39.97",
-    note: null,
+    prices: ["Ebook — $9.99"],
     img: "/img/card-h2lp.jpg",
     alt: "A DJ playing to a crowd",
     url: "https://h2lp.invocationinc.com/",
@@ -167,11 +159,11 @@ export function HubPage() {
                 <img src={p.img} alt={p.alt} className="hub-card-img" />
                 <h3>{p.name}</h3>
                 <p className="hub-card-line">{p.line}</p>
-                <p className="lf-price-row hub-card-price">
-                  {p.was && <span className="lf-was">{p.was}</span>}
-                  <span className="lf-now">{p.price}</span>
-                  {p.note && <span className="hub-card-note">{p.note}</span>}
-                </p>
+                <div className="hub-card-prices">
+                  {p.prices.map((price) => (
+                    <p key={price}>{price}</p>
+                  ))}
+                </div>
                 <a
                   href={p.url}
                   target="_blank"
@@ -184,8 +176,8 @@ export function HubPage() {
             ))}
           </div>
           <p className="lf-center hub-fine">
-            Every program is delivered instantly as a PDF ebook. No middleman,
-            no subscription, no upsell maze.
+            Delivered instantly as PDFs. No middleman, no subscription, no
+            upsell maze.
           </p>
         </section>
 
@@ -209,7 +201,7 @@ export function HubPage() {
             One of these four is the bottleneck in your life right now. Your
             happiness, your relationship, your time, or your ability to walk
             into a room and belong there. Pick the one that&rsquo;s costing
-            you the most. Fix it. Then come back for the next one.
+            you the most. Fix it.
           </p>
           <p>
             <strong>
