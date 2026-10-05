@@ -13,7 +13,6 @@ export function Header() {
       <nav className="hub-nav">
         <Link href="/#what-we-do">What we do</Link>
         <Link href="/#programs">Programs</Link>
-        <Link href="/private-work">Private work</Link>
         <Link href="/#start">Start here</Link>
       </nav>
     </header>

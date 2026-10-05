@@ -28,8 +28,6 @@ export function Footer() {
         <Link href="/terms">Terms</Link>
         {" · "}
         <Link href="/billing">Manage billing</Link>
-        {" · "}
-        <Link href="/private-work">Private work</Link>
       </p>
     </footer>
   );
