@@ -1,0 +1,169 @@
+.cc-root .lf-site-header {
+  flex-wrap: wrap;
+}
+
+.cc-root .hub-nav {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.cc-main {
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 28px 18px 80px;
+  font-size: 18px;
+}
+
+.cc-main h1 {
+  font-size: clamp(32px, 8vw, 48px);
+  line-height: 1.12;
+  margin: 8px 0 18px;
+}
+
+.cc-main h2 {
+  font-size: clamp(26px, 6vw, 32px);
+  line-height: 1.2;
+  margin: 36px 0 12px;
+}
+
+.cc-crumb {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0 0 12px;
+}
+
+.cc-crumb a,
+.cc-main a {
+  color: var(--red);
+}
+
+.cc-boundary,
+.cc-index {
+  padding-left: 1.2em;
+}
+
+.cc-boundary li,
+.cc-index li {
+  margin: 0 0 12px;
+}
+
+.cc-index-status {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: var(--soft);
+}
+
+.cc-script {
+  background: var(--white);
+  border-left: 5px solid var(--red);
+  padding: 16px 18px;
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.4;
+}
+
+.cc-questions {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cc-questions > li {
+  margin: 0 0 22px;
+}
+
+.cc-quiz fieldset {
+  border: 1px solid var(--line);
+  background: var(--white);
+  margin: 0;
+  padding: 16px;
+}
+
+.cc-quiz legend {
+  font-weight: 700;
+  padding: 0 6px;
+}
+
+.cc-choices {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.cc-choice {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  padding: 12px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  cursor: pointer;
+}
+
+.cc-choice input {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  flex: 0 0 auto;
+  accent-color: var(--red);
+}
+
+.cc-choice:focus-within {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+.cc-answer {
+  margin: 14px 0 0;
+  font-weight: 700;
+}
+
+.cc-answer-pending {
+  margin: 14px 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: var(--soft);
+}
+
+.cc-crisis {
+  background: var(--white);
+  border: 2px solid var(--ink);
+  padding: 20px 18px;
+  margin: 36px 0 20px;
+}
+
+.cc-crisis h2 {
+  margin-top: 0;
+}
+
+.cc-crisis ul {
+  padding-left: 1.2em;
+}
+
+.cc-complete {
+  width: 100%;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.cc-complete:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+.cc-complete-status {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.cc-when {
+  margin-top: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+.cc-source p:last-child {
+  margin-bottom: 0;
+}
