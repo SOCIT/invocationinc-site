@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { CheckoutReturn } from "@/components/care-split/CheckoutReturn";
 
 export const metadata: Metadata = {
-  title: "Checkout — The Care Split",
+  title: "Checkout — WHEN",
 };
 
 export default async function CheckoutReturnPage({

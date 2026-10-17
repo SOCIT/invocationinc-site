@@ -12,10 +12,10 @@ export const MEETING_AGENDA = [
 
 export function meetingGroundRules(): string[] {
   return [
-    findParagraph("The Care Split records what each person reports."),
+    findParagraph("WHEN records what each person reports."),
     CLAIMS.commitments[0],
     findParagraph(
-      "The Care Split provides education and meeting-preparation tools. It does not provide therapy",
+      "WHEN provides education and meeting-preparation tools. It does not provide therapy",
     ),
   ];
 }

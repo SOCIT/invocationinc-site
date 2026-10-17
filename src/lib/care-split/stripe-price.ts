@@ -18,11 +18,11 @@ export function validateCareSplitPrice(
     return {
       ok: false,
       error:
-        "The Care Split price must be a one-time payment. Recurring prices are not used.",
+        "WHEN price must be a one-time payment. Recurring prices are not used.",
     };
   }
   if (price.currency !== "usd") {
-    return { ok: false, error: "The Care Split price must be in USD." };
+    return { ok: false, error: "WHEN price must be in USD." };
   }
   if (tier === "interviews") {
     if (price.unit_amount !== INTERVIEW_PACK_CENTS) {

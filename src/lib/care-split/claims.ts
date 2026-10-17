@@ -1,38 +1,39 @@
 // Gate-corrected claims from issue #4 comment 2.
 // Use these sentences verbatim wherever the corresponding claim appears.
+// The product-name token is WHEN, per issue comment 4.
 // The research paragraph is the rule against unsourced statistics.
 // It is not displayed: this product publishes no caregiving statistic.
 
 export const CLAIMS = {
   "product": [
-    "The Care Split helps families organize caregiving concerns, document each participant's reported availability and limits, and prepare for a structured family discussion about care responsibilities.",
-    "The Care Split provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
+    "WHEN helps families organize caregiving concerns, document each participant's reported availability and limits, and prepare for a structured family discussion about care responsibilities.",
+    "WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
   ],
   "produces": [
-    "The Care Split organizes information reported by family members into a proposed caregiving responsibility matrix and meeting-preparation materials. The output reflects the information provided and is intended for family discussion. It does not guarantee agreement, fairness, compliance with applicable law, or any particular family or financial outcome."
+    "WHEN organizes information reported by family members into a proposed caregiving responsibility matrix and meeting-preparation materials. The output reflects the information provided and is intended for family discussion. It does not guarantee agreement, fairness, compliance with applicable law, or any particular family or financial outcome."
   ],
   "pca": [
-    "The Care Split may provide an educational Personal Care Agreement preparation worksheet for attorney review. The worksheet is not a substitute for an agreement drafted or reviewed by a qualified attorney. Requirements and consequences depend on applicable law and individual circumstances.",
+    "WHEN may provide an educational Personal Care Agreement preparation worksheet for attorney review. The worksheet is not a substitute for an agreement drafted or reviewed by a qualified attorney. Requirements and consequences depend on applicable law and individual circumstances.",
     "ATTORNEY REVIEW REQUIRED BEFORE SIGNING OR MAKING PAYMENTS."
   ],
   "benefits": [
-    "Medicaid eligibility, transfer penalties, and Personal Care Agreement treatment depend on applicable federal and state law and the individual's circumstances. The Care Split does not determine Medicaid eligibility, guarantee acceptance of an agreement, or guarantee avoidance of a transfer penalty.",
-    "VA pension and related benefit eligibility depend on applicable VA rules and the claimant's individual circumstances. The Care Split does not determine eligibility or guarantee benefit approval."
+    "Medicaid eligibility, transfer penalties, and Personal Care Agreement treatment depend on applicable federal and state law and the individual's circumstances. WHEN does not determine Medicaid eligibility, guarantee acceptance of an agreement, or guarantee avoidance of a transfer penalty.",
+    "VA pension and related benefit eligibility depend on applicable VA rules and the claimant's individual circumstances. WHEN does not determine eligibility or guarantee benefit approval."
   ],
   "tax": [
     "Payments to a family caregiver may have employment-tax, income-tax, and reporting consequences. Whether a worker is a household employee and which tax obligations apply depend on the actual working relationship, payment amounts, and applicable exceptions. Families should consult current IRS guidance and qualified tax professionals."
   ],
   "research": [
-    "Any published caregiving statistic will identify its source, publication date, population, and relevant definition. Any commercial-care cost comparison will identify the source year, geographic scope, type of service, and calculation assumptions. Estimates will not be presented as guaranteed savings or as the financial result of using The Care Split."
+    "Any published caregiving statistic will identify its source, publication date, population, and relevant definition. Any commercial-care cost comparison will identify the source year, geographic scope, type of service, and calculation assumptions. Estimates will not be presented as guaranteed savings or as the financial result of using WHEN."
   ],
   "pricing": [
-    "The Care Split's core offering is free. The AI interview tier costs $24.99 and includes five interviews. A tier priced at $100 or more adds human review. The scope of human review will be described accurately and will not be represented as legal advice or a guarantee of any outcome unless the service is separately and appropriately established for that purpose."
+    "WHEN's core offering is free. The AI interview tier costs $24.99 and includes five interviews. A tier priced at $100 or more adds human review. The scope of human review will be described accurately and will not be represented as legal advice or a guarantee of any outcome unless the service is separately and appropriately established for that purpose."
   ],
   "commitments": [
-    "The Care Split can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans. A proposed responsibility matrix does not itself obligate a family member to provide care or make payments."
+    "WHEN can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans. A proposed responsibility matrix does not itself obligate a family member to provide care or make payments."
   ],
   "limits": [
-    "The Care Split is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed."
+    "WHEN is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed."
   ]
 } as const;
 

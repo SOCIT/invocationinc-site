@@ -1,8 +1,8 @@
 // Buyer-facing copy for /care-split.
-// Source: issue #4 comment 1, verbatim.
-// The human-review placeholder in that comment is replaced here by the
-// scope sentence approved in the issue body (HUMAN_REVIEW_SCOPE).
-// Do not rewrite these strings.
+// Source: issue #4 comment 1, verbatim, with two approved substitutions:
+// the human-review placeholder is HUMAN_REVIEW_SCOPE, and the product
+// name token is WHEN (issue comment 4). The first mention on this page
+// is "WHEN — Who Handles Each Need". Do not rewrite these strings.
 
 export type CopyBlock =
   | { kind: "h1"; text: string }
@@ -19,7 +19,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "The Care Split helps families organize caregiving concerns, document each participant’s reported availability and limits, and prepare for a structured family discussion about care responsibilities."
+    "text": "WHEN — Who Handles Each Need helps families organize caregiving concerns, document each participant’s reported availability and limits, and prepare for a structured family discussion about care responsibilities."
   },
   {
     "kind": "h2",
@@ -63,7 +63,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "Asking for help is hard when asking turns into an argument. The Care Split is for the step before the argument: getting down, in one place, what each person says they can and can’t do."
+    "text": "Asking for help is hard when asking turns into an argument. WHEN is for the step before the argument: getting down, in one place, what each person says they can and can’t do."
   },
   {
     "kind": "h2",
@@ -79,7 +79,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "The Care Split records what each person reports. It doesn’t check it, and it doesn’t decide who’s right."
+    "text": "WHEN records what each person reports. It doesn’t check it, and it doesn’t decide who’s right."
   },
   {
     "kind": "h3",
@@ -87,11 +87,11 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "The Care Split organizes information reported by family members into a proposed caregiving responsibility matrix and meeting-preparation materials. The output reflects the information provided and is intended for family discussion. It does not guarantee agreement, fairness, compliance with applicable law, or any particular family or financial outcome."
+    "text": "WHEN organizes information reported by family members into a proposed caregiving responsibility matrix and meeting-preparation materials. The output reflects the information provided and is intended for family discussion. It does not guarantee agreement, fairness, compliance with applicable law, or any particular family or financial outcome."
   },
   {
     "kind": "p",
-    "text": "In plain words, it’s a proposal. Who might take which tasks, on which days, and who is the backup, all laid out on one page. The Care Split can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans. A proposed responsibility matrix does not itself obligate a family member to provide care or make payments."
+    "text": "In plain words, it’s a proposal. Who might take which tasks, on which days, and who is the backup, all laid out on one page. WHEN can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans. A proposed responsibility matrix does not itself obligate a family member to provide care or make payments."
   },
   {
     "kind": "h3",
@@ -115,7 +115,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "The Care Split works from what people report, and what people report can be incomplete or wrong. Reading first gives you the chance to catch that before it reaches the family."
+    "text": "WHEN works from what people report, and what people report can be incomplete or wrong. Reading first gives you the chance to catch that before it reaches the family."
   },
   {
     "kind": "h2",
@@ -123,7 +123,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "li",
-    "text": "Core: free. The Care Split’s core offering is free."
+    "text": "Core: free. WHEN’s core offering is free."
   },
   {
     "kind": "li",
@@ -135,15 +135,15 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "h2",
-    "text": "What The Care Split is, and what it isn’t"
+    "text": "What WHEN is, and what it isn’t"
   },
   {
     "kind": "p",
-    "text": "The Care Split is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed."
+    "text": "WHEN is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed."
   },
   {
     "kind": "p",
-    "text": "The Care Split provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
+    "text": "WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
   },
   {
     "kind": "h2",
@@ -203,7 +203,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "What to do with it. The Care Split’s core offering is free. It’s a way to put your answers, and your siblings’ answers, in one place and get ready to talk."
+    "text": "What to do with it. WHEN’s core offering is free. It’s a way to put your answers, and your siblings’ answers, in one place and get ready to talk."
   },
   {
     "kind": "h3",
@@ -211,7 +211,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "The Care Split provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
+    "text": "WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
   },
   {
     "kind": "h2",
@@ -327,7 +327,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "Write it down. The Care Split can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans. A backup who is only a promise in a phone call is easy to lose. A backup on the page is easier to keep."
+    "text": "Write it down. WHEN can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans. A backup who is only a promise in a phone call is easy to lose. A backup on the page is easier to keep."
   },
   {
     "kind": "h2",
@@ -339,7 +339,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "Before you say it: Gather what changed, using facts and not blame. What does your parent need now that they didn’t need before? Questions about what level of care your parent needs are for their doctors and care team. The Care Split does not provide clinical assessment."
+    "text": "Before you say it: Gather what changed, using facts and not blame. What does your parent need now that they didn’t need before? Questions about what level of care your parent needs are for their doctors and care team. WHEN does not provide clinical assessment."
   },
   {
     "kind": "p",
@@ -371,10 +371,10 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "The Care Split is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed."
+    "text": "WHEN is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed."
   },
   {
     "kind": "p",
-    "text": "The Care Split provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
+    "text": "WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
   }
 ];

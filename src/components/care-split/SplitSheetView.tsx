@@ -86,7 +86,7 @@ export function SplitSheetView() {
           ))}
 
           <h2>Proposed labels</h2>
-          <p>{findParagraph("The Care Split records what each person reports.")}</p>
+          <p>{findParagraph("WHEN records what each person reports.")}</p>
           <ul>
             {sheet.legend.map((item) => (
               <li key={item.label}>

@@ -41,7 +41,7 @@ export async function POST(request: NextRequest) {
       session.mode !== "payment" ||
       (tier !== "interviews" && tier !== "review")
     ) {
-      return NextResponse.json({ error: "That payment is not for The Care Split." }, { status: 400 });
+      return NextResponse.json({ error: "That payment is not for WHEN." }, { status: 400 });
     }
     if (session.payment_status !== "paid") {
       return NextResponse.json({ error: "Payment is not complete." }, { status: 402 });
@@ -52,7 +52,7 @@ export async function POST(request: NextRequest) {
     const price = lineItems.data[0]?.price;
     const priceId = typeof price === "string" ? price : price?.id;
     if (!expected || !priceId || priceId !== expected || !price || typeof price === "string") {
-      return NextResponse.json({ error: "The paid price does not match The Care Split." }, { status: 400 });
+      return NextResponse.json({ error: "The paid price does not match WHEN." }, { status: 400 });
     }
 
     const check = validateCareSplitPrice(tier, {
@@ -72,7 +72,7 @@ export async function POST(request: NextRequest) {
   } catch (err) {
     const message = err instanceof Error ? err.message : "";
     if (!/sk_(live|test)_/i.test(message)) {
-      console.error("Care Split confirm error:", message);
+      console.error("WHEN confirm error:", message);
     }
     return NextResponse.json(
       { error: "The payment could not be confirmed." },

@@ -24,7 +24,7 @@ import { CareNav } from "./CareNav";
 import { CreditLine } from "./CreditLine";
 
 const PRICE_LINES = [
-  "The Care Split's core offering is free.",
+  "WHEN's core offering is free.",
   "The AI interview tier costs $24.99 and includes five interviews.",
   "A tier priced at $100 or more adds human review.",
 ];

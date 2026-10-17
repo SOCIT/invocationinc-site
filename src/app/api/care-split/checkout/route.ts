@@ -74,7 +74,7 @@ export async function POST(request: NextRequest) {
   } catch (err) {
     const message = err instanceof Error ? err.message : "";
     if (!/sk_(live|test)_/i.test(message)) {
-      console.error("Care Split checkout error:", message);
+      console.error("WHEN checkout error:", message);
     }
     return NextResponse.json(
       { error: "Checkout could not be started." },

@@ -639,6 +639,23 @@ body {
   color: #3d332c;
   font-size: 18px;
 }
+.hub-when {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px 24px;
+  margin: 8px 0 36px;
+  padding: 18px 20px;
+  background: #fffaf2;
+  border: 1px solid #d7cbb8;
+}
+.hub-when p {
+  margin: 0;
+  max-width: 68ch;
+  font-size: 18px;
+  line-height: 1.5;
+}
 .hub-footer-products {
   line-height: 1.9;
 }

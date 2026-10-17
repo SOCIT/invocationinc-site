@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const products = [
   {
     name: "Eight Weeks to Happy",
@@ -156,6 +158,17 @@ export function HubPage() {
             Delivered instantly as PDFs. No middleman, no subscription, no
             upsell maze.
           </p>
+        </section>
+
+        <section className="hub-when" aria-label="WHEN">
+          <p>
+            New: WHEN — Who Handles Each Need. Each sibling answers a private
+            interview, and the answers become one proposed care split for your
+            family meeting. Free to start.
+          </p>
+          <Link href="/care-split" className="lf-btn lf-btn-red hub-btn">
+            See how it works
+          </Link>
         </section>
 
         <section id="founder" className="hub-founder">

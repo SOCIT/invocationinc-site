@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { InterviewSession } from "@/components/care-split/Interview";
 
 export const metadata: Metadata = {
-  title: "Interview — The Care Split",
+  title: "Interview — WHEN",
 };
 
 export default async function InterviewSessionPage({

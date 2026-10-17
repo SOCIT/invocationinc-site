@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { WorksheetView } from "@/components/care-split/WorksheetView";
 
 export const metadata: Metadata = {
-  title: "Packet — The Care Split",
+  title: "Packet — WHEN",
 };
 
 export default function WorksheetPacketPage() {
