@@ -1,0 +1,253 @@
+.cs-shell {
+  overflow-x: clip;
+}
+
+.cs-nav,
+.cs-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 14px;
+  padding: 12px 16px;
+  background: #fffaf2;
+  border-bottom: 1px solid #d7cbb8;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.cs-subnav {
+  border: 0;
+  padding: 0 0 12px;
+  background: transparent;
+}
+
+.cs-nav a,
+.cs-subnav a,
+.cs-section a {
+  color: #d10f28;
+  text-decoration: none;
+}
+
+.cs-hero {
+  background: #140e0c;
+  color: #fffaf2;
+  padding: 48px 16px 36px;
+}
+
+.cs-hero-inner,
+.cs-wrap,
+.cs-footer {
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+.cs-wrap {
+  padding: 8px 16px 36px;
+}
+
+.cs-footer {
+  padding: 0 16px 40px;
+}
+
+.cs-hero h1,
+.cs-hero p {
+  color: #fffaf2;
+}
+
+.cs-hero h1,
+.cs-section h1 {
+  font-size: clamp(32px, 8vw, 52px);
+  line-height: 1.12;
+  margin: 0 0 16px;
+}
+
+.cs-section h2 {
+  font-size: clamp(26px, 5vw, 32px);
+  line-height: 1.2;
+  margin: 36px 0 12px;
+}
+
+.cs-section h3,
+.cs-hero h3 {
+  font-size: 22px;
+  margin: 22px 0 8px;
+}
+
+.cs-section p,
+.cs-hero p,
+.cs-section li {
+  overflow-wrap: anywhere;
+}
+
+.cs-btn {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  border: 2px solid #d10f28;
+  background: #d10f28;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 1.3;
+  padding: 14px 16px;
+  margin: 10px 0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.cs-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.cs-btn-secondary {
+  background: transparent;
+  color: #140e0c;
+  border-color: #140e0c;
+}
+
+.cs-btn:focus-visible,
+.cs-check input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #d10f28;
+  outline-offset: 2px;
+}
+
+.cs-check {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fffaf2;
+  border: 1px solid #d7cbb8;
+  padding: 12px;
+  margin: 0 0 8px;
+}
+
+.cs-check input {
+  width: 22px;
+  height: 22px;
+  margin-top: 4px;
+  flex: 0 0 auto;
+}
+
+.cs-card,
+.cs-attorney,
+.cs-flag,
+.cs-doc,
+textarea {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.cs-card,
+.cs-attorney,
+.cs-flag {
+  background: #fffaf2;
+  padding: 16px;
+  margin: 0 0 12px;
+}
+
+.cs-card {
+  border: 1px solid #d7cbb8;
+}
+
+.cs-attorney {
+  border: 3px solid #140e0c;
+}
+
+.cs-attorney-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  margin: 0 0 10px;
+}
+
+.cs-flag {
+  border-left: 8px solid #d10f28;
+  margin-top: 20px;
+}
+
+.cs-kicker,
+.cs-vector,
+.cs-credits {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cs-kicker,
+.cs-vector {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a7a6a;
+  margin-bottom: 4px;
+}
+
+.cs-prompt {
+  display: block;
+  font-size: 1.35rem;
+  line-height: 1.35;
+  margin: 8px 0 12px;
+}
+
+textarea,
+.cs-doc {
+  width: 100%;
+  font: inherit;
+  color: inherit;
+}
+
+textarea {
+  padding: 12px;
+  background: #fffaf2;
+  border: 1px solid #d7cbb8;
+}
+
+.cs-doc {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #fffaf2;
+  border: 1px solid #d7cbb8;
+  padding: 12px;
+}
+
+.cs-quote {
+  border-left: 4px solid #d10f28;
+  padding-left: 12px;
+}
+
+.cs-error {
+  color: #d10f28;
+  font-weight: 700;
+}
+
+.cs-file {
+  display: block;
+  margin: 12px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.cs-file input {
+  display: block;
+  max-width: 100%;
+  margin-top: 8px;
+}
+
+.cs-modules {
+  border: 0;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+@media (max-width: 420px) {
+  .cs-shell {
+    font-size: 17px;
+  }
+}
