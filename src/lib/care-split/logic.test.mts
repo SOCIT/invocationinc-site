@@ -3,7 +3,7 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 import { ACCOUNT_NUMBER_ERROR } from "./account-guard";
-import { ATTORNEY_NOTICE_BODY, ATTORNEY_NOTICE_TITLE, HUMAN_REVIEW_SCOPE } from "./claims";
+import { HUMAN_REVIEW_SCOPE } from "./claims";
 import { buyerBlocks } from "./buyer-copy";
 import { buildReadAloud } from "./meeting";
 import { emptyChecks, toggleCheck } from "./only-child";
@@ -201,7 +201,7 @@ test("POA red-flag test case fires, and nearby negatives do not", () => {
   });
   const sheet = buildSheet([flagged]);
   assert.equal(sheet.poaRedFlag, true);
-  assert.match(sheet.poaRedFlagText ?? "", /elder-law attorney/i);
+  assert.equal(sheet.poaRedFlagText, null);
   assert.match(sheet.respiteLine, /One weekend a month/);
   assert.match(sheet.suggestedCheckIns, /30 days/);
   assert.match(sheet.suggestedCheckIns, /60 days/);
@@ -334,12 +334,11 @@ test("approval gates the read-aloud page, which has three modules and no resolut
   assert.equal(new Set(scripts.map((script) => script.id)).size, 3);
 });
 
-test("attorney notice is on every worksheet surface", () => {
+test("no attorney notice on any worksheet surface (2026-10-18 disclaimer purge)", () => {
   const sheet = buildSheet([]);
   for (const surface of ["cover", "preview", "download", "packet"] as const) {
     const text = buildWorksheetDocument({ surface, sheet, approved: false });
-    assert.equal(text.startsWith(ATTORNEY_NOTICE_TITLE), true, surface);
-    assert.equal(text.includes(ATTORNEY_NOTICE_BODY), true, surface);
+    assert.equal(/ATTORNEY REVIEW|elder-law attorney/i.test(text), false, surface);
   }
 });
 
