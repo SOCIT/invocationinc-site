@@ -1,9 +1,11 @@
 /**
- * Six lessons in the 2026-10-17 synthesis order.
- * Posted scripts and quizzes are paired with their mechanic.
- * Lesson 1 (SmileBell / Third Bell) and lesson 2 (the 4% rule) had no
- * posted script or quiz; those two are written from the mechanic only.
- * Pairing conflicts are flagged in the PR and are not rewritten here.
+ * Seven lessons. Order: the listener-principle lesson (Claude structure
+ * Lesson 1) restored as Lesson 1 per issue #8; the 2026-10-17 synthesis
+ * order follows as Lessons 2-7. Scripts and quizzes are paired with
+ * their mechanic. Lesson 3 (the 4% rule) script/quiz were written from
+ * the filled mechanic. Issue #8 resolutions: Lesson 4's label states
+ * the sibling scenario is not a hard moment; the sundowning application
+ * stays paired with Lesson 5 (feeling, mood, baseline), its mechanic.
  */
 
 export type QuizChoice = {
@@ -44,6 +46,64 @@ const expectationsSource = [
 export const lessons: Lesson[] = [
   {
     number: "1",
+    title: "Communication is what the listener does",
+    mechanic: [
+      "\"Communication is what the listener does.\" Your message is what the other person does with your words, not what you meant by them.",
+      "Listening and understanding matter more than merely delivering a message.",
+    ],
+    applicationLabel: "Application exercise. Repeated questions.",
+    scenarioClaim:
+      "Repeated questions are an illustrative caregiving scenario for practicing general communication principles; the books do not teach dementia-specific repetition-management techniques.",
+    application: [
+      "Your mother asks when your sister is arriving. You say four o'clock. Ten minutes later she asks again, and you answer, \"I just told you.\" She goes quiet and looks worried.",
+      "Applying the mechanic: the question coming back tells you what she did with your words. Instead of repeating a sentence that didn't land, you treat the next answer as a new message, and you watch what she does with it.",
+    ],
+    script: ['"Linda is coming at four. I\'ll sit with you until then."'],
+    quiz: [
+      {
+        id: "q1",
+        prompt: "Under the listener principle, what counts as having communicated?",
+        choices: [
+          { id: "a", text: "Saying it clearly" },
+          { id: "b", text: "What the listener does with what you said" },
+          { id: "c", text: "Saying it more than once" },
+        ],
+        answer:
+          "Answer: b. Communication is what the listener does.",
+      },
+      {
+        id: "q2",
+        prompt:
+          "You gave an answer and the same question came back ten minutes later. Which response applies the principle?",
+        choices: [
+          { id: "a", text: "\"I just told you.\"" },
+          {
+            id: "b",
+            text: "Treat the returned question as information about what the listener did with your words, and give a short, plain answer",
+          },
+          { id: "c", text: "Say it louder" },
+        ],
+        answer:
+          "Answer: b. This changes what you do next. It does not promise a particular response.",
+      },
+      {
+        id: "q3",
+        prompt: 'True or false: "If I said it clearly, it was communicated."',
+        choices: [
+          { id: "true", text: "True" },
+          { id: "false", text: "False" },
+        ],
+        answer:
+          "Answer: False. Under the principle, communication is what the listener does, so how clearly you said it is only half of it.",
+      },
+    ],
+    sources: [
+      "Frame: How to Like People.",
+      "Supporting. Source: How to Train Your Partner, Chapter 2 — Communication.",
+    ],
+  },
+  {
+    number: "2",
     title: "Your state first",
     mechanic: [
       "How to Like People, Chapter 1, It starts with a smile, installs the SmileBell: genuine happiness on demand, with a touch trigger. The Third Bell is Jonah's extension of that mechanic, not content from How to Like People or Eight Weeks to Happy. The Third Bell is genuine sadness on command, so a caregiver can meet a parent in their emotional register instead of forcing cheer. It acts on the caregiver's own state only, and it teaches the return to neutral in the same breath.",
@@ -98,7 +158,7 @@ export const lessons: Lesson[] = [
     ],
   },
   {
-    number: "2",
+    number: "3",
     title: "Give them the 4%",
     mechanic: [
       "How to Like People, Part 1, The 4% Rule of Conversation. 80% of communication is nonverbal, and 20% is spoken. Of the spoken part, about 80% should be the other person. That leaves a focused and powerful 4% for your verbal communication. Give them the 4%. That pause is not rejection.",
@@ -158,7 +218,7 @@ export const lessons: Lesson[] = [
     ],
   },
   {
-    number: "3",
+    number: "4",
     title: "Say the need once",
     mechanic: expectationsMechanic,
     applicationLabel:
@@ -210,7 +270,7 @@ export const lessons: Lesson[] = [
     sources: expectationsSource,
   },
   {
-    number: "4",
+    number: "5",
     title: "Feeling, mood, baseline",
     mechanic: [
       "Your state is what the room experiences. Learn to tell a feeling, a mood, and a baseline apart.",
@@ -267,7 +327,7 @@ export const lessons: Lesson[] = [
     ],
   },
   {
-    number: "5",
+    number: "6",
     title: "Reframe your own remembering",
     mechanic: [
       "Changing the emotion attached to remembering. Her frame, not the parent's. The frame in this lesson is the caregiver's own remembering, not the parent's.",
@@ -326,7 +386,7 @@ export const lessons: Lesson[] = [
     ],
   },
   {
-    number: "6",
+    number: "7",
     title: "The hard ask, once",
     mechanic: expectationsMechanic,
     applicationLabel: "Application exercise. Refusal of care.",
