@@ -1,4 +1,4 @@
-import { ATTORNEY_NOTICE_BODY, SUGGESTED_CHECK_INS } from "./claims";
+import { SUGGESTED_CHECK_INS } from "./claims";
 import type { Interview } from "./state";
 import {
   capacityIsQuestioned,
@@ -41,8 +41,6 @@ export type SplitSheet = {
   poaRedFlag: boolean;
   poaRedFlagText: string | null;
 };
-
-export const POA_FLAG_TEXT = `Elder-law attorney review flag: the reports question the parent's capacity, and a person reported as paid for care is also reported as the sole financial power-of-attorney agent. Have a qualified elder-law attorney review the agreement, the parent's decision-making authority, compensation terms, and potential benefit or tax consequences before signing or making payments.`;
 
 const LEGEND: { label: string; when: string }[] = [
   { label: "hands-on lead", when: "nearby + time + comfort with hands-on care" },
@@ -147,6 +145,6 @@ export function buildSheet(interviews: readonly Interview[]): SplitSheet {
         .map((answer) => ({ prompt: answer.prompt, report: answer.report })),
     })),
     poaRedFlag: flag,
-    poaRedFlagText: flag ? `${POA_FLAG_TEXT} ${ATTORNEY_NOTICE_BODY}` : null,
+    poaRedFlagText: null,
   };
 }

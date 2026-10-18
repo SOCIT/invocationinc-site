@@ -11,7 +11,7 @@ export function Footer() {
   const year = new Date().getFullYear();
   return (
     <footer className="lf-footer">
-      <p>© {year} Invocation Inc. Not therapy. Not medical advice.</p>
+      <p>© {year} Invocation Inc.</p>
       <p className="hub-footer-products">
         {products.map((p, i) => (
           <span key={p.name}>

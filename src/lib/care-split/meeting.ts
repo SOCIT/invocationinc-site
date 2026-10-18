@@ -1,4 +1,3 @@
-import { CLAIMS } from "./claims";
 import { findParagraph, hardMomentScripts, type HardMomentScript, type ModuleId } from "./sections";
 
 export type { ModuleId };
@@ -11,13 +10,7 @@ export const MEETING_AGENDA = [
 ];
 
 export function meetingGroundRules(): string[] {
-  return [
-    findParagraph("WHEN records what each person reports."),
-    CLAIMS.commitments[0],
-    findParagraph(
-      "WHEN provides education and meeting-preparation tools. It does not provide therapy",
-    ),
-  ];
+  return [findParagraph("WHEN records what each person reports.")];
 }
 
 const MODULE_ORDER: ModuleId[] = ["refusal", "money_ask", "break"];

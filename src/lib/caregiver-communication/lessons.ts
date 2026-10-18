@@ -52,8 +52,6 @@ export const lessons: Lesson[] = [
       "Listening and understanding matter more than merely delivering a message.",
     ],
     applicationLabel: "Application exercise. Repeated questions.",
-    scenarioClaim:
-      "Repeated questions are an illustrative caregiving scenario for practicing general communication principles; the books do not teach dementia-specific repetition-management techniques.",
     application: [
       "Your mother asks when your sister is arriving. You say four o'clock. Ten minutes later she asks again, and you answer, \"I just told you.\" She goes quiet and looks worried.",
       "Applying the mechanic: the question coming back tells you what she did with your words. Instead of repeating a sentence that didn't land, you treat the next answer as a new message, and you watch what she does with it.",
@@ -84,7 +82,7 @@ export const lessons: Lesson[] = [
           { id: "c", text: "Say it louder" },
         ],
         answer:
-          "Answer: b. This changes what you do next. It does not promise a particular response.",
+          "Answer: b. This changes what you do next.",
       },
       {
         id: "q3",
@@ -129,7 +127,7 @@ export const lessons: Lesson[] = [
           { id: "c", text: "A promised response from the other person" },
         ],
         answer:
-          "Answer: b. The SmileBell is the Chapter 1 mechanic: genuine happiness on demand, with a touch trigger. This product does not promise a particular response or outcome.",
+          "Answer: b. The SmileBell is the Chapter 1 mechanic: genuine happiness on demand, with a touch trigger.",
       },
       {
         id: "q2",
@@ -151,7 +149,7 @@ export const lessons: Lesson[] = [
           { id: "false", text: "False" },
         ],
         answer:
-          "Answer: False. The Third Bell acts on the caregiver's own state only. This product does not promise a particular response or outcome.",
+          "Answer: False. The Third Bell acts on the caregiver's own state only.",
       },
     ],
     sources: [
@@ -167,8 +165,6 @@ export const lessons: Lesson[] = [
       "That leaves a focused and powerful 4% for your verbal communication. Give them the 4%. That pause is not rejection.",
     ],
     applicationLabel: "Application exercise. Accusations of stealing or lying.",
-    scenarioClaim:
-      "Accusations of stealing or lying are an illustrative caregiving scenario for practicing general communication principles; the books do not teach dementia-specific techniques for managing these accusations.",
     application: [
       "Your father says you took his wallet. You didn't. You feel the sting of being accused.",
       "Applying the mechanic: you give them the 4%. Most of the spoken part stays with him. Your pause is not rejection. You do not decide why he said it.",
@@ -185,7 +181,7 @@ export const lessons: Lesson[] = [
           { id: "c", text: "Whoever speaks louder" },
         ],
         answer:
-          "Answer: b. Of the spoken part, about 80% should be the other person. This does not promise a particular response.",
+          "Answer: b. Of the spoken part, about 80% should be the other person.",
       },
       {
         id: "q2",
@@ -203,7 +199,7 @@ export const lessons: Lesson[] = [
           { id: "c", text: "Decide why they made the accusation" },
         ],
         answer:
-          "Answer: a. Option b aims at a particular response, and this product does not promise one. Option c would determine the cause of a person's behavior, which this product does not do.",
+          "Answer: a. Option b aims at a particular response. Option c would determine the cause of a person's behavior, which this product does not do.",
       },
       {
         id: "q3",
@@ -213,7 +209,7 @@ export const lessons: Lesson[] = [
           { id: "false", text: "False" },
         ],
         answer:
-          "Answer: False. That pause is not rejection. Communication principles may be useful to practice, but this product does not promise a particular response or outcome.",
+          "Answer: False. That pause is not rejection.",
       },
     ],
     sources: [
@@ -267,7 +263,7 @@ export const lessons: Lesson[] = [
           { id: "false", text: "False" },
         ],
         answer:
-          "Answer: False. The mechanic makes the need clear. This product does not promise a particular response.",
+          "Answer: False. The mechanic makes the need clear.",
       },
     ],
     sources: expectationsSource,
@@ -281,8 +277,6 @@ export const lessons: Lesson[] = [
       "Eight Weeks to Happy discusses how a person's emotional state and baseline affect what others experience.",
     ],
     applicationLabel: "Application exercise. Sundowning agitation.",
-    scenarioClaim:
-      "Sundowning agitation is an illustrative caregiving scenario for practicing general communication principles; the books do not teach sundowning or dementia-specific agitation techniques.",
     application: [
       'It\'s late afternoon. Your father is restless and pacing. You\'ve had a long day, and when you say, "Dad, please calm down," your voice is tight.',
       "Applying the mechanic: before your words, your own state is part of what the room experiences. You notice your state first. You don't try to decide why he's restless, because this product does not determine the cause of a person's behavior.",
@@ -321,7 +315,7 @@ export const lessons: Lesson[] = [
           { id: "b", text: "Her state is part of what the room experiences" },
         ],
         answer:
-          "Answer: b. The mechanic describes what the room experiences. It does not promise how the other person will respond.",
+          "Answer: b. The mechanic describes what the room experiences.",
       },
     ],
     sources: [
@@ -337,8 +331,6 @@ export const lessons: Lesson[] = [
       "How to Like People, Chapter 8 is Reframing. How to Train Your Partner, Chapter 8, discusses changing the emotion associated with a past experience within its relationship-communication framework. That chapter is a supporting source.",
     ],
     applicationLabel: 'Application exercise. The "take me home" loop.',
-    scenarioClaim:
-      "The 'take me home' loop is an illustrative caregiving scenario for practicing general communication principles; the books do not teach dementia-specific redirection or orientation techniques.",
     application: [
       "It's 3:30 in the afternoon and you're already dreading the evening. Last night your mother asked to go home again and again, and you ended up in tears in the kitchen. You're carrying that remembering into the next conversation.",
       "Applying the mechanic: you notice the emotion attached to remembering last night, and you work on changing it before the evening starts.",
@@ -369,7 +361,7 @@ export const lessons: Lesson[] = [
           { id: "c", text: "Plan what to say to make her stop asking" },
         ],
         answer:
-          "Answer: b. Option c aims at a particular response, and this product does not promise one.",
+          "Answer: b.",
       },
       {
         id: "q3",
@@ -380,7 +372,7 @@ export const lessons: Lesson[] = [
           { id: "false", text: "False" },
         ],
         answer:
-          "Answer: False. Communication principles may be useful to practice, but this product does not promise a particular response or outcome.",
+          "Answer: False.",
       },
     ],
     sources: [
@@ -393,8 +385,6 @@ export const lessons: Lesson[] = [
     title: "The hard ask, once",
     mechanic: expectationsMechanic,
     applicationLabel: "Application exercise. Refusal of care.",
-    scenarioClaim:
-      "Refusal of care is an illustrative caregiving scenario for practicing general communication principles; the books do not teach dementia-specific refusal-of-care techniques.",
     application: [
       'It\'s time for your mother\'s shower and she says no. You\'ve already said, "Come on, Mom, we talked about this," and "Please, just do it," and your voice is climbing. Those lines aren\'t a request. The need is leaking out as nagging.',
       "Applying the mechanic: you state the need once, plainly, as a request, and you don't keep restating it in pleading versions.",
@@ -438,7 +428,7 @@ export const lessons: Lesson[] = [
           { id: "false", text: "False" },
         ],
         answer:
-          "Answer: False. A plain request does not promise a yes. This product does not promise a particular response or outcome.",
+          "Answer: False. A plain request does not promise a yes.",
       },
     ],
     sources: expectationsSource,

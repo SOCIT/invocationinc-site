@@ -1,10 +1,4 @@
-import {
-  CRISIS_CLOSING,
-  CRISIS_HEADING,
-  CRISIS_ITEMS,
-  CRISIS_LEAD_REST,
-  CRISIS_LEAD_STRONG,
-} from "@/lib/caregiver-communication/crisis";
+import { CRISIS_HEADING, CRISIS_ITEMS } from "@/lib/caregiver-communication/crisis";
 
 export function CrisisBlock() {
   return (
@@ -15,9 +9,6 @@ export function CrisisBlock() {
       aria-labelledby="crisis-heading"
     >
       <h2 id="crisis-heading">{CRISIS_HEADING}</h2>
-      <p>
-        <strong>{CRISIS_LEAD_STRONG}</strong> {CRISIS_LEAD_REST}
-      </p>
       <ul>
         {CRISIS_ITEMS.map((item) => (
           <li key={item.label}>
@@ -25,7 +16,6 @@ export function CrisisBlock() {
           </li>
         ))}
       </ul>
-      <p>{CRISIS_CLOSING}</p>
     </section>
   );
 }

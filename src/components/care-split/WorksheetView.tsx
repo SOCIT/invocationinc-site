@@ -6,7 +6,6 @@ import { buildSheet } from "@/lib/care-split/sheet";
 import { isApproved } from "@/lib/care-split/state";
 import { useFamily } from "@/lib/care-split/storage";
 import { buildWorksheetDocument, type WorksheetSurface } from "@/lib/care-split/worksheet-doc";
-import { AttorneyNotice } from "./AttorneyNotice";
 import { CareNav } from "./CareNav";
 import { downloadText } from "./download";
 
@@ -35,7 +34,6 @@ export function WorksheetView({ surface }: { surface: WorksheetSurface }) {
       <CareNav />
       <main className="cs-section" data-surface={surface}>
         <div className="cs-wrap">
-          <AttorneyNotice />
           <h1>{TITLES[surface]}</h1>
           <nav className="cs-subnav" aria-label="Worksheet surfaces">
             {LINKS.map((link) => (

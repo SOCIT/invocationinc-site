@@ -27,8 +27,7 @@ Each person answers questions on their own: you, and each of your siblings. Nobo
 WHEN records what each person reports. It doesn’t check it, and it doesn’t decide who’s right.
 
 **Step 2: The Split Sheet**
-WHEN organizes information reported by family members into a proposed caregiving responsibility matrix and meeting-preparation materials. The output reflects the information provided and is intended for family discussion. It does not guarantee agreement, fairness, compliance with applicable law, or any particular family or financial outcome.
-In plain words, it’s a proposal. Who might take which tasks, on which days, and who is the backup, all laid out on one page. WHEN can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans. A proposed responsibility matrix does not itself obligate a family member to provide care or make payments.
+In plain words, it’s a proposal. Who might take which tasks, on which days, and who is the backup, all laid out on one page. WHEN can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans.
 
 **Step 3: The Family Meeting**
 You sit down with the Split Sheet and the meeting-preparation materials in front of everyone. It’s a structured discussion about care responsibilities, with one page everyone can look at instead of a string of texts.
@@ -41,11 +40,9 @@ WHEN works from what people report, and what people report can be incomplete or 
 ### Pricing
 • Core: free. WHEN’s core offering is free.
 • AI interview: $24.99. Includes five interviews.
-• Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity. It is not legal advice, medical advice, therapy, or mediation, and it does not guarantee agreement or any outcome.
+• Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity.
 
-### What WHEN is, and what it isn’t
-WHEN is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed.
-WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation.
+WHEN helps families plan and coordinate care — it isn’t a medical, legal, or financial service.
 
 ## Part 2: The Only Child Test
 A one-page checklist for the one doing the care.
@@ -63,16 +60,15 @@ If you’re the only one doing the care, you’re living like an only child, eve
 ☐ 9. If you asked who does what, no one could point to a page. It lives in my head.
 ☐ 10. I’ve stopped asking for help because I already know how it will go.
 
-There’s no score. This isn’t a diagnosis, and it isn’t an assessment of you, your siblings, or your parent. If several of these sound like your week, that’s worth putting on paper.
+There’s no score. If several of these sound like your week, that’s worth putting on paper.
 
 What to do with it. WHEN’s core offering is free. It’s a way to put your answers, and your siblings’ answers, in one place and get ready to talk.
 
 **Start with the free core**
 
-WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation.
 
 ## Part 3: Three Hard-Moment Scripts
-These are starting points. Change the words until they sound like you, and say them out loud once before the real conversation. They’re conversation prep, not therapy or mediation, and nobody has to say them perfectly.
+These are starting points. Change the words until they sound like you, and say them out loud once before the real conversation. They’re conversation prep, and nobody has to say them perfectly.
 
 ### Script 1: Asking a sibling for money instead of time
 When to use it: A sibling lives far away, works long hours, or has already said no to giving time.
@@ -86,8 +82,7 @@ If they say, “I’d rather help with time.” “I’d be glad of that. Which 
 If they say, “I don’t have much extra.” “Then let’s start smaller. What could you do for three months? We’ll look at it again after that.”
 If they say, “I already call every week and give advice.” “That matters to Mom [Dad], and I want you to keep doing it. It doesn’t cover [the task]. This would.”
 If they say, “Let me think about it.” “Of course. Can we talk again on [day]? I’d like an answer by then, even if it’s no.”
-Write it down. If they agree, put it on the Split Sheet as a proposed expense so it’s in one place. A proposed responsibility matrix does not itself obligate a family member to provide care or make payments, so ask the plain question out loud too: “Can I count on this starting [date]?”
-If any of this money would go to you as pay for your caregiving, slow down. Payments to a family caregiver may have employment-tax, income-tax, and reporting consequences. Whether a worker is a household employee and which tax obligations apply depend on the actual working relationship, payment amounts, and applicable exceptions. Families should consult current IRS guidance and qualified tax professionals. Before money changes hands as pay for care, talk with a qualified tax professional and a qualified elder-law attorney.
+Write it down. If they agree, put it on the Split Sheet as a proposed expense so it’s in one place. Ask the plain question out loud too: “Can I count on this starting [date]?”
 
 ### Script 2: Saying “I can’t be the only backup anymore”
 When to use it: You’ve realized that if you’re sick, out of town, or just worn out, there’s no one else.
@@ -105,7 +100,7 @@ Write it down. WHEN can help families document proposed tasks, schedules, expens
 
 ### Script 3: Reopening the split when care needs jump
 When to use it: After a fall, a hospital stay, a new diagnosis, or anything that makes the old plan stop fitting.
-Before you say it: Gather what changed, using facts and not blame. What does your parent need now that they didn’t need before? Questions about what level of care your parent needs are for their doctors and care team. WHEN does not provide clinical assessment.
+Before you say it: Gather what changed, using facts and not blame. What does your parent need now that they didn’t need before?
 Say:
 “What we agreed on was built for how things were in [month]. Since [event], things have changed. I’m not saying anyone did anything wrong. I’m saying the plan no longer fits, and I can’t absorb the difference on my own.
 Can we go back through it, all of us, starting with what each person can do now? I’d like us to answer separately first, the way we did before, and then meet.”
@@ -113,4 +108,3 @@ If they say, “We already did this.” “We did, for what Mom [Dad] needed the
 If they say, “Can’t we wait and see?” “I’ve been waiting and seeing. I’d like to set a date, [date], to look at it again, so I’m not the one deciding what happens in between.”
 If they say, “I can’t do any more than before.” “That might be true. I just need to hear it as an answer, so the plan is built on what’s real and not on guesses.”
 After the conversation. Reopening the split means doing the three steps again with new information: Separate Interviews, an updated Split Sheet, and a Family Meeting.
-WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation.

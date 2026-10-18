@@ -54,9 +54,13 @@ export function SplitSheetView() {
       <main className="cs-section">
         <div className="cs-wrap">
           <h1>Split Sheet</h1>
-          <p>{CLAIMS.produces[0]}</p>
+          {CLAIMS.produces.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
           <p>{proposal}</p>
-          <p>{CLAIMS.commitments[0]}</p>
+          {CLAIMS.commitments.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
           <p>{approvalLine}</p>
           {stale && <p>Answers changed after approval. {approvalLine}</p>}
           {approved && <p>You approved this Split Sheet.</p>}

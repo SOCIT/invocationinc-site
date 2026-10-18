@@ -87,11 +87,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "WHEN organizes information reported by family members into a proposed caregiving responsibility matrix and meeting-preparation materials. The output reflects the information provided and is intended for family discussion. It does not guarantee agreement, fairness, compliance with applicable law, or any particular family or financial outcome."
-  },
-  {
-    "kind": "p",
-    "text": "In plain words, it’s a proposal. Who might take which tasks, on which days, and who is the backup, all laid out on one page. WHEN can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans. A proposed responsibility matrix does not itself obligate a family member to provide care or make payments."
+    "text": "In plain words, it’s a proposal. Who might take which tasks, on which days, and who is the backup, all laid out on one page. WHEN can help families document proposed tasks, schedules, expenses, respite arrangements, and backup plans."
   },
   {
     "kind": "h3",
@@ -131,19 +127,11 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "li",
-    "text": "Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity. It is not legal advice, medical advice, therapy, or mediation, and it does not guarantee agreement or any outcome."
-  },
-  {
-    "kind": "h2",
-    "text": "What WHEN is, and what it isn’t"
+    "text": "Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity."
   },
   {
     "kind": "p",
-    "text": "WHEN is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed."
-  },
-  {
-    "kind": "p",
-    "text": "WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
+    "text": "WHEN helps families plan and coordinate care — it isn’t a medical, legal, or financial service."
   },
   {
     "kind": "h2",
@@ -199,7 +187,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "There’s no score. This isn’t a diagnosis, and it isn’t an assessment of you, your siblings, or your parent. If several of these sound like your week, that’s worth putting on paper."
+    "text": "There’s no score. If several of these sound like your week, that’s worth putting on paper."
   },
   {
     "kind": "p",
@@ -210,16 +198,12 @@ export const buyerBlocks: CopyBlock[] = [
     "text": "Start with the free core"
   },
   {
-    "kind": "p",
-    "text": "WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
-  },
-  {
     "kind": "h2",
     "text": "Part 3: Three Hard-Moment Scripts"
   },
   {
     "kind": "p",
-    "text": "These are starting points. Change the words until they sound like you, and say them out loud once before the real conversation. They’re conversation prep, not therapy or mediation, and nobody has to say them perfectly."
+    "text": "These are starting points. Change the words until they sound like you, and say them out loud once before the real conversation. They’re conversation prep, and nobody has to say them perfectly."
   },
   {
     "kind": "h2",
@@ -271,11 +255,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "Write it down. If they agree, put it on the Split Sheet as a proposed expense so it’s in one place. A proposed responsibility matrix does not itself obligate a family member to provide care or make payments, so ask the plain question out loud too: “Can I count on this starting [date]?”"
-  },
-  {
-    "kind": "p",
-    "text": "If any of this money would go to you as pay for your caregiving, slow down. Payments to a family caregiver may have employment-tax, income-tax, and reporting consequences. Whether a worker is a household employee and which tax obligations apply depend on the actual working relationship, payment amounts, and applicable exceptions. Families should consult current IRS guidance and qualified tax professionals. Before money changes hands as pay for care, talk with a qualified tax professional and a qualified elder-law attorney."
+    "text": "Write it down. If they agree, put it on the Split Sheet as a proposed expense so it’s in one place. Ask the plain question out loud too: “Can I count on this starting [date]?”"
   },
   {
     "kind": "h2",
@@ -339,7 +319,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "p",
-    "text": "Before you say it: Gather what changed, using facts and not blame. What does your parent need now that they didn’t need before? Questions about what level of care your parent needs are for their doctors and care team. WHEN does not provide clinical assessment."
+    "text": "Before you say it: Gather what changed, using facts and not blame. What does your parent need now that they didn’t need before?"
   },
   {
     "kind": "p",
@@ -369,8 +349,4 @@ export const buyerBlocks: CopyBlock[] = [
     "kind": "p",
     "text": "After the conversation. Reopening the split means doing the three steps again with new information: Separate Interviews, an updated Split Sheet, and a Family Meeting."
   },
-  {
-    "kind": "p",
-    "text": "WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation."
-  }
 ];
