@@ -106,14 +106,16 @@ export const lessons: Lesson[] = [
     number: "2",
     title: "Your state first",
     mechanic: [
-      "How to Like People, Chapter 1, It starts with a smile, installs the SmileBell: genuine happiness on demand, with a touch trigger. The Third Bell is Jonah's extension of that mechanic, not content from How to Like People or Eight Weeks to Happy. The Third Bell is genuine sadness on command, so a caregiver can meet a parent in their emotional register instead of forcing cheer. It acts on the caregiver's own state only, and it teaches the return to neutral in the same breath.",
+      "How to Like People, Chapter 1, It starts with a smile, installs the SmileBell: genuine happiness on demand, fired by a touch trigger you set on purpose.",
+      "The Third Bell is Jonah's extension of that mechanic — not content from How to Like People or Eight Weeks to Happy. The Third Bell is genuine sadness on command, so a caregiver can meet a parent in their emotional register instead of forcing cheer.",
+      "It acts on the caregiver's own state only, and the return to neutral is taught in the same breath.",
     ],
     applicationLabel:
       "Application exercise. The caregiver's own state. The Third Bell is Jonah's extension, not content from How to Like People or Eight Weeks to Happy.",
     application: [
       "You set the Third Bell, Jonah's extension, on your own state: genuine sadness on command, then the return to neutral in the same breath. You do not use it to determine the cause of a person's behavior.",
     ],
-    script: ['Say to yourself: "Genuine sadness, on purpose. Now, neutral."'],
+    script: ['Say to yourself first: "I can be sad with them for a minute. Then I come back to neutral."'],
     quiz: [
       {
         id: "q1",
@@ -161,7 +163,8 @@ export const lessons: Lesson[] = [
     number: "3",
     title: "Give them the 4%",
     mechanic: [
-      "How to Like People, Part 1, The 4% Rule of Conversation. 80% of communication is nonverbal, and 20% is spoken. Of the spoken part, about 80% should be the other person. That leaves a focused and powerful 4% for your verbal communication. Give them the 4%. That pause is not rejection.",
+      "How to Like People, Part 1, The 4% Rule of Conversation. 80% of communication is nonverbal, and 20% is spoken. Of the spoken part, about 80% should be the other person.",
+      "That leaves a focused and powerful 4% for your verbal communication. Give them the 4%. That pause is not rejection.",
     ],
     applicationLabel: "Application exercise. Accusations of stealing or lying.",
     scenarioClaim:

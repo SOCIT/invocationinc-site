@@ -5,9 +5,9 @@ export type { ModuleId };
 
 export const MEETING_AGENDA = [
   "Read what each person reported on the approved Split Sheet.",
-  "Read the proposed responsibilities: who might do which tasks, who might pay, and who might be the backup.",
-  "Read the respite line and the suggested check-ins.",
-  "Read an inserted module, if you chose one: the refusal, the money ask, or the break.",
+  "Go through the proposed responsibilities: who might do which tasks, who might pay, and who might be the backup.",
+  "Check the respite line and the suggested check-ins.",
+  "If you chose a module — the refusal, the money ask, or the break — read it aloud.",
 ];
 
 export function meetingGroundRules(): string[] {

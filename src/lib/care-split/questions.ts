@@ -184,7 +184,7 @@ export const BRANCH_QUESTIONS: Record<BranchId, Question> = {
   },
   respite_length: {
     id: "branch_respite_length",
-    prompt: "What length of break are you reporting?",
+    prompt: "How long a break do you need?",
     vector: "respite",
     vectorLabel: respite,
     branch: "respite_length",

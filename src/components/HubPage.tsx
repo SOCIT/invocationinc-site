@@ -3,7 +3,7 @@ import Link from "next/link";
 const products = [
   {
     name: "Eight Weeks to Happy",
-    line: "An 8-week system for taking control of your happiness.",
+    line: "Eight weeks of daily reps that raise your baseline.",
     price: "$9.99",
     img: "/img/card-ew2h.jpg",
     alt: "A path through a misty forest",
@@ -11,7 +11,7 @@ const products = [
   },
   {
     name: "How to Train Your Partner",
-    line: "Communication science for better romantic relationships.",
+    line: "Run your relationship like a system.",
     price: "$9.99",
     img: "/img/card-h2typ.jpg",
     alt: "A red rose in the dark",
@@ -45,12 +45,7 @@ export function HubPage() {
           </p>
           <h1>Change doesn&rsquo;t take years. It takes a moment.</h1>
           <p className="hub-lead">
-            Invocation was founded on the principle of rapid personal change.
-            Humans can have their lives and perceptions changed in a single
-            moment, in response to all sorts of external stimuli. By studying
-            these &ldquo;Change Events&rdquo; &mdash; and thousands of studies
-            spanning cultures around the world over centuries &mdash; we found
-            that these instantaneous changes can happen intentionally.
+            Invocation studies Change Events &mdash; the moments when a life changes all at once &mdash; and how to trigger one on purpose.
           </p>
           <p className="hub-sub">
             We&rsquo;re Human Performance Engineers. We build systems that
@@ -71,9 +66,7 @@ export function HubPage() {
         <section id="what-we-do">
           <h2>What we do</h2>
           <p>
-            Invocation is a group of Human Performance Engineers (HPEs) who
-            awaken the power, confidence, and knowledge inside of you so you
-            can better yourself.
+            Invocation is a group of Human Performance Engineers (HPEs). We build change systems: fix yourself first, read the room accurately, say what you mean so it lands.
           </p>
           <p>
             Most of the industry sells you the long road: years of therapy,
@@ -96,18 +89,10 @@ export function HubPage() {
             everyone wanting to invoke their better self.
           </p>
           <p>
-            Our communications programs empower you and your team to
-            communicate effectively inside and outside of your organization.
-            Private clients learn to improve their mental and physical health
-            through communication. Salespeople increase customer relationships
-            through a better framework requiring lower effort.
+            Our communications programs teach you and your team to say what you mean so it lands — inside your organization and outside it. Private clients use the same tools on their own mental and physical health. Salespeople build stronger customer relationships with less effort.
           </p>
           <p>
-            Your physical health &mdash; and the physical health of your
-            employees &mdash; directly affects productivity, longevity,
-            attendance, and happiness. Our systems start with the basics of
-            health management, the 80%, and move toward advanced performance
-            enhancement, down to the 1%.
+            Your health &mdash; and your employees&rsquo; &mdash; drives productivity, attendance, and how long you last. Our systems start with the basics, the 80%, and work down to the last 1%.
           </p>
           <div className="hub-band">
             <figure>

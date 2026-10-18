@@ -78,9 +78,7 @@ export function MeetingView() {
                 {sheet.rows.length === 0 && <p>Not reported.</p>}
                 {sheet.rows.map((row) => (
                   <p key={row.person}>
-                    {row.person}. Reported tasks and hours: {row.reportedTasksAndHours}. Who might
-                    do this (proposed): {row.whoMightDo}. Who might pay (proposed): {row.whoMightPay}.
-                    Who might be the backup (proposed): {row.whoMightBeBackup}.
+                    {row.person}. Reported tasks and hours: {row.reportedTasksAndHours}. Who might do this: {row.whoMightDo}. Who might pay: {row.whoMightPay}. Who might be the backup: {row.whoMightBeBackup}.
                   </p>
                 ))}
                 <h2>Respite line</h2>
