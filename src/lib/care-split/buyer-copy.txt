@@ -41,7 +41,7 @@ WHEN works from what people report, and what people report can be incomplete or 
 ### Pricing
 • Core: free. WHEN’s core offering is free.
 • AI interview: $24.99. Includes five interviews.
-• Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity. It is not legal advice, medical advice, therapy, or mediation, and it does not guarantee agreement or any outcome. Human review is not legal advice and does not guarantee any outcome.
+• Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity. It is not legal advice, medical advice, therapy, or mediation, and it does not guarantee agreement or any outcome.
 
 ### What WHEN is, and what it isn’t
 WHEN is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed.
@@ -113,5 +113,4 @@ If they say, “We already did this.” “We did, for what Mom [Dad] needed the
 If they say, “Can’t we wait and see?” “I’ve been waiting and seeing. I’d like to set a date, [date], to look at it again, so I’m not the one deciding what happens in between.”
 If they say, “I can’t do any more than before.” “That might be true. I just need to hear it as an answer, so the plan is built on what’s real and not on guesses.”
 After the conversation. Reopening the split means doing the three steps again with new information: Separate Interviews, an updated Split Sheet, and a Family Meeting.
-WHEN is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed.
 WHEN provides education and meeting-preparation tools. It does not provide therapy, legal advice, clinical assessment, or professional mediation.

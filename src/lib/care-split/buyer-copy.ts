@@ -131,7 +131,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "li",
-    "text": "Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity. It is not legal advice, medical advice, therapy, or mediation, and it does not guarantee agreement or any outcome. Human review is not legal advice and does not guarantee any outcome."
+    "text": "Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity. It is not legal advice, medical advice, therapy, or mediation, and it does not guarantee agreement or any outcome."
   },
   {
     "kind": "h2",
@@ -368,10 +368,6 @@ export const buyerBlocks: CopyBlock[] = [
   {
     "kind": "p",
     "text": "After the conversation. Reopening the split means doing the three steps again with new information: Separate Interviews, an updated Split Sheet, and a Family Meeting."
-  },
-  {
-    "kind": "p",
-    "text": "WHEN is an educational coordination and meeting-preparation product. Its outputs are based on information provided by users and may be incomplete or inaccurate. Families should independently verify material facts and obtain qualified professional advice when needed."
   },
   {
     "kind": "p",

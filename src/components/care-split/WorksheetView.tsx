@@ -49,7 +49,7 @@ export function WorksheetView({ surface }: { surface: WorksheetSurface }) {
           ))}
           {surface !== "cover" && (
             <>
-              <h2>Reported preparation notes</h2>
+              <h2>Reported preparation notes (proposed)</h2>
               {sheet.rows.length === 0 && <p>Not reported.</p>}
               {sheet.rows.map((row) => (
                 <article key={row.person} className="cs-card">
@@ -59,11 +59,11 @@ export function WorksheetView({ surface }: { surface: WorksheetSurface }) {
                     {row.reportedTasksAndHours}
                   </p>
                   <p>
-                    <span className="cs-kicker">Who might pay (proposed)</span>
+                    <span className="cs-kicker">Who might pay</span>
                     {row.whoMightPay}
                   </p>
                   <p>
-                    <span className="cs-kicker">Who might be the backup (proposed)</span>
+                    <span className="cs-kicker">Who might be the backup</span>
                     {row.whoMightBeBackup}
                   </p>
                 </article>

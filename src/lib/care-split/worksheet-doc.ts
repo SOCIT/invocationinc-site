@@ -20,12 +20,13 @@ export function buildWorksheetDocument(input: {
     return lines.join("\n");
   }
   lines.push("Reported tasks and hours");
+  lines.push("All assignments below are proposed.");
   if (input.sheet.rows.length === 0) lines.push("Not reported");
   for (const row of input.sheet.rows) {
     lines.push(`${row.person}: ${row.reportedTasksAndHours}`);
-    lines.push(`Who might do this (proposed): ${row.whoMightDo}`);
-    lines.push(`Who might pay (proposed): ${row.whoMightPay}`);
-    lines.push(`Who might be the backup (proposed): ${row.whoMightBeBackup}`);
+    lines.push(`Who might do this: ${row.whoMightDo}`);
+    lines.push(`Who might pay: ${row.whoMightPay}`);
+    lines.push(`Who might be the backup: ${row.whoMightBeBackup}`);
   }
   lines.push("");
   lines.push(`Respite line: ${input.sheet.respiteLine}`);

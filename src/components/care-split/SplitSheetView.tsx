@@ -61,7 +61,7 @@ export function SplitSheetView() {
           {stale && <p>Answers changed after approval. {approvalLine}</p>}
           {approved && <p>You approved this Split Sheet.</p>}
 
-          <h2>Task inventory</h2>
+          <h2>Task inventory (all proposed)</h2>
           {sheet.rows.length === 0 && <p>Not reported.</p>}
           {sheet.rows.map((row) => (
             <article key={row.person} className="cs-card">
@@ -71,15 +71,15 @@ export function SplitSheetView() {
                 {row.reportedTasksAndHours}
               </p>
               <p>
-                <span className="cs-kicker">Who might do this (proposed)</span>
+                <span className="cs-kicker">Who might do this</span>
                 {row.whoMightDo}
               </p>
               <p>
-                <span className="cs-kicker">Who might pay (proposed)</span>
+                <span className="cs-kicker">Who might pay</span>
                 {row.whoMightPay}
               </p>
               <p>
-                <span className="cs-kicker">Who might be the backup (proposed)</span>
+                <span className="cs-kicker">Who might be the backup</span>
                 {row.whoMightBeBackup}
               </p>
             </article>
