@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { BoundaryList } from "@/components/caregiver-communication/BoundaryList";
 import { CompletionControl } from "@/components/caregiver-communication/CompletionControl";
 import { CrisisBlock } from "@/components/caregiver-communication/CrisisBlock";
 import { Quiz } from "@/components/caregiver-communication/Quiz";
@@ -55,7 +54,6 @@ export default async function LessonPage({
         <h2 id="application-heading">Application</h2>
         <p>{lesson.applicationLabel}</p>
         {lesson.scenarioClaim ? <p>{lesson.scenarioClaim}</p> : null}
-        <BoundaryList />
         {lesson.application.map((paragraph) => (
           <p key={paragraph}>{paragraph}</p>
         ))}

@@ -5,7 +5,7 @@ import "./caregiver.css";
 
 const title = "Caregiver Communication & De-escalation — Invocation Inc";
 const description =
-  "Caregiver Communication & De-escalation teaches communication principles drawn from the Invocation books. Lessons teach communication mechanics, not therapy, medical advice, dementia treatment, or crisis intervention.";
+  "Caregiver Communication & De-escalation teaches communication principles drawn from the Invocation books.";
 
 export const metadata: Metadata = {
   title: {

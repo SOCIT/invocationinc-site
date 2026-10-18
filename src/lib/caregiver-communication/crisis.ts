@@ -1,14 +1,9 @@
 /**
- * Crisis-resources block, verbatim from issue #6.
- * Placement rules and the comment header are not part of the block.
+ * Crisis-resources block: heading + emergency numbers only.
+ * The boundary/disclaimer sentences were struck by the owner's
+ * 2026-10-18 disclaimer purge; the numbers are functional resources.
  */
 export const CRISIS_HEADING = "Need immediate help?";
-
-export const CRISIS_LEAD_STRONG =
-  "This lesson is educational, not emergency support.";
-
-export const CRISIS_LEAD_REST =
-  "Invocation Inc does not provide crisis intervention, medical care, or emergency monitoring through this product.";
 
 export const CRISIS_ITEMS = [
   {
@@ -25,16 +20,9 @@ export const CRISIS_ITEMS = [
   },
 ] as const;
 
-export const CRISIS_CLOSING =
-  "If you are concerned about a person's sudden change in behavior, immediate safety, or possible medical emergency, contact an appropriate healthcare professional or emergency service. Do not rely on this lesson to assess the cause or severity of the situation.";
-
-/** Plain text of the block, used to diff a rendered lesson against the issue comment. */
+/** Plain text of the block. */
 export const CRISIS_PLAINTEXT = [
   CRISIS_HEADING,
   "",
-  `${CRISIS_LEAD_STRONG} ${CRISIS_LEAD_REST}`,
-  "",
   ...CRISIS_ITEMS.map((item) => `- ${item.label} ${item.text}`),
-  "",
-  CRISIS_CLOSING,
 ].join("\n");

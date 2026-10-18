@@ -1,8 +1,4 @@
-import {
-  ATTORNEY_NOTICE_BODY,
-  ATTORNEY_NOTICE_TITLE,
-  CLAIMS,
-} from "./claims";
+import { CLAIMS } from "./claims";
 import type { SplitSheet } from "./sheet";
 
 export type WorksheetSurface = "cover" | "preview" | "download" | "packet";
@@ -12,7 +8,7 @@ export function buildWorksheetDocument(input: {
   sheet: SplitSheet;
   approved: boolean;
 }): string {
-  const lines: string[] = [ATTORNEY_NOTICE_TITLE, ATTORNEY_NOTICE_BODY, ""];
+  const lines: string[] = [];
   lines.push(...CLAIMS.pca);
   lines.push("");
   if (input.surface === "cover") {
