@@ -7,16 +7,20 @@ import { useProgress } from "@/components/caregiver-communication/use-progress";
 export function Quiz({
   lessonNumber,
   questions,
+  quizKey,
 }: {
   lessonNumber: string;
   questions: QuizQuestion[];
+  quizKey?: string;
 }) {
   const progress = useProgress();
-  const answers = progress.answers[lessonNumber] ?? {};
+  const storageKey = quizKey ? `${lessonNumber}:${quizKey}` : lessonNumber;
+  const headingId = quizKey ? `quiz-heading-${quizKey}` : "quiz-heading";
+  const answers = progress.answers[storageKey] ?? {};
 
   return (
-    <section className="cc-quiz" aria-labelledby="quiz-heading">
-      <h2 id="quiz-heading">Quiz</h2>
+    <section className="cc-quiz" aria-labelledby={headingId}>
+      <h2 id={headingId}>Quiz</h2>
       <ol className="cc-questions">
         {questions.map((question, index) => {
           const selected = answers[question.id];
@@ -28,17 +32,17 @@ export function Quiz({
                 </legend>
                 <div className="cc-choices">
                   {question.choices.map((choice) => {
-                    const inputId = `lesson-${lessonNumber}-${question.id}-${choice.id}`;
+                    const inputId = `lesson-${storageKey}-${question.id}-${choice.id}`;
                     return (
                       <label key={choice.id} className="cc-choice" htmlFor={inputId}>
                         <input
                           id={inputId}
                           type="radio"
-                          name={`${lessonNumber}-${question.id}`}
+                          name={`${storageKey}-${question.id}`}
                           value={choice.id}
                           checked={selected === choice.id}
                           onChange={() =>
-                            saveQuizAnswer(lessonNumber, question.id, choice.id)
+                            saveQuizAnswer(storageKey, question.id, choice.id)
                           }
                         />
                         <span>

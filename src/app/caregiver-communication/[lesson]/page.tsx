@@ -4,7 +4,11 @@ import { notFound } from "next/navigation";
 import { CompletionControl } from "@/components/caregiver-communication/CompletionControl";
 import { CrisisBlock } from "@/components/caregiver-communication/CrisisBlock";
 import { Quiz } from "@/components/caregiver-communication/Quiz";
-import { getLesson, lessons } from "@/lib/caregiver-communication/lessons";
+import {
+  getLesson,
+  lessons,
+  type LessonApplication,
+} from "@/lib/caregiver-communication/lessons";
 
 export function generateStaticParams() {
   return lessons.map((lesson) => ({ lesson: lesson.number }));
@@ -21,6 +25,49 @@ export async function generateMetadata({
   const lesson = getLesson(number);
   if (!lesson) return {};
   return { title: lesson.title };
+}
+
+function ApplicationSections({
+  lessonNumber,
+  block,
+  idSuffix,
+}: {
+  lessonNumber: string;
+  block: LessonApplication;
+  idSuffix?: string;
+}) {
+  const applicationHeading = idSuffix
+    ? `application-heading-${idSuffix}`
+    : "application-heading";
+  const scriptHeading = idSuffix ? `script-heading-${idSuffix}` : "script-heading";
+
+  return (
+    <>
+      <section aria-labelledby={applicationHeading}>
+        <h2 id={applicationHeading}>Application</h2>
+        <p>{block.applicationLabel}</p>
+        {block.scenarioClaim ? <p>{block.scenarioClaim}</p> : null}
+        {block.application.map((paragraph) => (
+          <p key={paragraph}>{paragraph}</p>
+        ))}
+      </section>
+
+      <section aria-labelledby={scriptHeading}>
+        <h2 id={scriptHeading}>Script</h2>
+        {block.script.map((paragraph) => (
+          <p key={paragraph} className="cc-script">
+            {paragraph}
+          </p>
+        ))}
+      </section>
+
+      <Quiz
+        lessonNumber={lessonNumber}
+        questions={block.quiz}
+        quizKey={block.quizKey}
+      />
+    </>
+  );
 }
 
 export default async function LessonPage({
@@ -50,25 +97,26 @@ export default async function LessonPage({
         ))}
       </section>
 
-      <section aria-labelledby="application-heading">
-        <h2 id="application-heading">Application</h2>
-        <p>{lesson.applicationLabel}</p>
-        {lesson.scenarioClaim ? <p>{lesson.scenarioClaim}</p> : null}
-        {lesson.application.map((paragraph) => (
-          <p key={paragraph}>{paragraph}</p>
-        ))}
-      </section>
-
-      <section aria-labelledby="script-heading">
-        <h2 id="script-heading">Script</h2>
-        {lesson.script.map((paragraph) => (
-          <p key={paragraph} className="cc-script">
-            {paragraph}
-          </p>
-        ))}
-      </section>
-
-      <Quiz lessonNumber={lesson.number} questions={lesson.quiz} />
+      {lesson.applicationLabel ? (
+        <ApplicationSections
+          lessonNumber={lesson.number}
+          block={{
+            applicationLabel: lesson.applicationLabel,
+            scenarioClaim: lesson.scenarioClaim,
+            application: lesson.application,
+            script: lesson.script,
+            quiz: lesson.quiz,
+          }}
+        />
+      ) : null}
+      {lesson.extraApplications?.map((block) => (
+        <ApplicationSections
+          key={block.quizKey ?? block.applicationLabel}
+          lessonNumber={lesson.number}
+          block={block}
+          idSuffix={block.quizKey}
+        />
+      ))}
 
       <section className="cc-source" aria-labelledby="source-heading">
         <h2 id="source-heading">Source</h2>

@@ -1,11 +1,20 @@
 /**
  * Seven lessons. Order: the listener-principle lesson (Claude structure
- * Lesson 1) restored as Lesson 1 per issue #8; the 2026-10-17 synthesis
- * order follows as Lessons 2-7. Scripts and quizzes are paired with
- * their mechanic. Lesson 3 (the 4% rule) script/quiz were written from
- * the filled mechanic. Issue #8 resolutions: Lesson 4's label states
- * the sibling scenario is not a hard moment; the sundowning application
- * stays paired with Lesson 5 (feeling, mood, baseline), its mechanic.
+ * Lesson 1) is Lesson 1; the 2026-10-17 synthesis order follows as
+ * Lessons 2-7. Scripts and quizzes stay verbatim and are paired with
+ * their mechanic.
+ *
+ * "Say the need once" keeps the sibling-ask script. The structure doc
+ * labels that scenario as not a hard moment. Refusal of care stays on
+ * "The hard ask, once" (same mechanic, the hard-moment application).
+ *
+ * The sundowning script was written for "your state is what the room
+ * experiences" (notice your state first), not for the ninety-second
+ * feeling/mood/baseline definitions. It is on "Your state first".
+ * SmileBell and the Third Bell stay on that lesson, and the Third Bell
+ * stays labeled as Jonah's extension. The definitions stay on
+ * "Feeling, mood, baseline", Eight Weeks to Happy labeled supporting.
+ * That definitions lesson has no script in the source of record.
  */
 
 export type QuizChoice = {
@@ -20,6 +29,16 @@ export type QuizQuestion = {
   answer: string;
 };
 
+export type LessonApplication = {
+  applicationLabel: string;
+  scenarioClaim?: string;
+  application: string[];
+  script: string[];
+  quiz: QuizQuestion[];
+  /** Separates stored answers when one lesson renders two quizzes. */
+  quizKey?: string;
+};
+
 export type Lesson = {
   number: string;
   title: string;
@@ -29,6 +48,8 @@ export type Lesson = {
   application: string[];
   script: string[];
   quiz: QuizQuestion[];
+  /** Further application, script, and quiz blocks, verbatim, after the first. */
+  extraApplications?: LessonApplication[];
   sources: string[];
   showWhen?: boolean;
 };
@@ -107,6 +128,8 @@ export const lessons: Lesson[] = [
       "How to Like People, Chapter 1, It starts with a smile, installs the SmileBell: genuine happiness on demand, fired by a touch trigger you set on purpose.",
       "The Third Bell is Jonah's extension of that mechanic — not content from How to Like People or Eight Weeks to Happy. The Third Bell is genuine sadness on command, so a caregiver can meet a parent in their emotional register instead of forcing cheer.",
       "It acts on the caregiver's own state only, and the return to neutral is taught in the same breath.",
+      "Your state is what the room experiences.",
+      "Eight Weeks to Happy discusses how a person's emotional state and baseline affect what others experience.",
     ],
     applicationLabel:
       "Application exercise. The caregiver's own state. The Third Bell is Jonah's extension, not content from How to Like People or Eight Weeks to Happy.",
@@ -152,9 +175,57 @@ export const lessons: Lesson[] = [
           "Answer: False. The Third Bell acts on the caregiver's own state only.",
       },
     ],
+    extraApplications: [
+      {
+        quizKey: "sundown",
+        applicationLabel: "Application exercise. Sundowning agitation.",
+        application: [
+          'It\'s late afternoon. Your father is restless and pacing. You\'ve had a long day, and when you say, "Dad, please calm down," your voice is tight.',
+          "Applying the mechanic: before your words, your own state is part of what the room experiences. You notice your state first. You don't try to decide why he's restless, because this product does not determine the cause of a person's behavior.",
+        ],
+        script: [
+          'Say to yourself first: "I\'m tense, and that\'s part of this room." Then say to him: "I\'m here. I\'m going to sit down next to you."',
+        ],
+        quiz: [
+          {
+            id: "q1",
+            prompt: "According to the mechanic, what does the room experience?",
+            choices: [
+              { id: "a", text: "Only your words" },
+              { id: "b", text: "Your state" },
+              { id: "c", text: "Only what you intended" },
+            ],
+            answer: "Answer: b.",
+          },
+          {
+            id: "q2",
+            prompt: "Which comes first when you apply this mechanic?",
+            choices: [
+              { id: "a", text: "Decide what is causing the other person's behavior" },
+              { id: "b", text: "Notice your own state before you speak" },
+              { id: "c", text: 'Say "calm down" more firmly' },
+            ],
+            answer:
+              "Answer: b. Noticing your own state is within your reach. Determining the cause of someone's behavior is not something this product does.",
+          },
+          {
+            id: "q3",
+            prompt:
+              "A caregiver says all the right words in a tight voice. Under this mechanic, what is true?",
+            choices: [
+              { id: "a", text: "The words are the whole message" },
+              { id: "b", text: "Her state is part of what the room experiences" },
+            ],
+            answer:
+              "Answer: b. The mechanic describes what the room experiences.",
+          },
+        ],
+      },
+    ],
     sources: [
       "Source: How to Like People, Chapter 1 — It starts with a smile.",
       "The Third Bell is Jonah's extension. It is not content from How to Like People or Eight Weeks to Happy.",
+      "Supporting. Source: Eight Weeks to Happy — emotional state, mood, and baseline.",
     ],
   },
   {
@@ -272,52 +343,13 @@ export const lessons: Lesson[] = [
     number: "5",
     title: "Feeling, mood, baseline",
     mechanic: [
-      "Your state is what the room experiences. Learn to tell a feeling, a mood, and a baseline apart.",
+      "Learn to tell a feeling, a mood, and a baseline apart.",
       "Supporting source, Eight Weeks to Happy. A feeling lasts under ninety seconds. Past that, it is a mood. A mood that does not leave is the baseline. The baseline is what other people experience as you.",
-      "Eight Weeks to Happy discusses how a person's emotional state and baseline affect what others experience.",
     ],
-    applicationLabel: "Application exercise. Sundowning agitation.",
-    application: [
-      'It\'s late afternoon. Your father is restless and pacing. You\'ve had a long day, and when you say, "Dad, please calm down," your voice is tight.',
-      "Applying the mechanic: before your words, your own state is part of what the room experiences. You notice your state first. You don't try to decide why he's restless, because this product does not determine the cause of a person's behavior.",
-    ],
-    script: [
-      'Say to yourself first: "I\'m tense, and that\'s part of this room." Then say to him: "I\'m here. I\'m going to sit down next to you."',
-    ],
-    quiz: [
-      {
-        id: "q1",
-        prompt: "According to the mechanic, what does the room experience?",
-        choices: [
-          { id: "a", text: "Only your words" },
-          { id: "b", text: "Your state" },
-          { id: "c", text: "Only what you intended" },
-        ],
-        answer: "Answer: b.",
-      },
-      {
-        id: "q2",
-        prompt: "Which comes first when you apply this mechanic?",
-        choices: [
-          { id: "a", text: "Decide what is causing the other person's behavior" },
-          { id: "b", text: "Notice your own state before you speak" },
-          { id: "c", text: 'Say "calm down" more firmly' },
-        ],
-        answer:
-          "Answer: b. Noticing your own state is within your reach. Determining the cause of someone's behavior is not something this product does.",
-      },
-      {
-        id: "q3",
-        prompt:
-          "A caregiver says all the right words in a tight voice. Under this mechanic, what is true?",
-        choices: [
-          { id: "a", text: "The words are the whole message" },
-          { id: "b", text: "Her state is part of what the room experiences" },
-        ],
-        answer:
-          "Answer: b. The mechanic describes what the room experiences.",
-      },
-    ],
+    applicationLabel: "",
+    application: [],
+    script: [],
+    quiz: [],
     sources: [
       "Frame: How to Like People.",
       "Supporting. Source: Eight Weeks to Happy — emotional state, mood, and baseline.",
