@@ -7,7 +7,7 @@ import "./care-split.css";
 const title =
   "WHEN — Who Handles Each Need | Split a Parent's Care Between Siblings, On Paper — Invocation Inc";
 const description =
-  "WHEN (Who Handles Each Need) interviews each sibling separately and organizes the answers into a proposed caregiving responsibility split — who does what, who pays, who is backup — plus a family-meeting script. Free core; AI interview pack $24.99 for five interviews.";
+  "WHEN (Who Handles Each Need) interviews each sibling separately and organizes the answers into a proposed caregiving responsibility split — who does what, who pays, who is backup — plus a family-meeting script. Free core; AI interview pack $9.99 for five interviews.";
 
 export const metadata: Metadata = {
   title,

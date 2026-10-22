@@ -1,39 +1,30 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getStripe } from "@/lib/stripe";
 import {
+  INTERVIEW_PRICE_ENV,
   validateCareSplitPrice,
-  type CareSplitTier,
 } from "@/lib/care-split/stripe-price";
 
 export const runtime = "nodejs";
 
-function priceEnv(tier: CareSplitTier): "STRIPE_PRICE_CARE_SPLIT_INTERVIEWS" | "STRIPE_PRICE_CARE_SPLIT_REVIEW" {
-  return tier === "interviews"
-    ? "STRIPE_PRICE_CARE_SPLIT_INTERVIEWS"
-    : "STRIPE_PRICE_CARE_SPLIT_REVIEW";
-}
-
-function missingEnv(tier: CareSplitTier): string[] {
+function missingEnv(): string[] {
   const missing: string[] = [];
   if (!process.env.STRIPE_SECRET_KEY) missing.push("STRIPE_SECRET_KEY");
-  const name = priceEnv(tier);
-  if (!process.env[name]) missing.push(name);
+  if (!process.env[INTERVIEW_PRICE_ENV]) missing.push(INTERVIEW_PRICE_ENV);
   return missing;
 }
 
 export async function POST(request: NextRequest) {
-  let tier: CareSplitTier | null = null;
   try {
     const body = await request.json();
-    if (body?.tier === "interviews" || body?.tier === "review") tier = body.tier;
+    if (body?.tier !== "interviews") {
+      return NextResponse.json({ error: "Missing tier." }, { status: 400 });
+    }
   } catch {
     return NextResponse.json({ error: "Missing tier." }, { status: 400 });
   }
-  if (!tier) {
-    return NextResponse.json({ error: "Missing tier." }, { status: 400 });
-  }
 
-  const missing = missingEnv(tier);
+  const missing = missingEnv();
   if (missing.length > 0) {
     return NextResponse.json(
       { error: "Checkout is not configured.", missing },
@@ -42,17 +33,17 @@ export async function POST(request: NextRequest) {
   }
 
   const stripe = getStripe();
-  const priceId = process.env[priceEnv(tier)];
+  const priceId = process.env[INTERVIEW_PRICE_ENV];
   if (!stripe || !priceId) {
     return NextResponse.json(
-      { error: "Checkout is not configured.", missing: missingEnv(tier) },
+      { error: "Checkout is not configured.", missing: missingEnv() },
       { status: 503 },
     );
   }
 
   try {
     const price = await stripe.prices.retrieve(priceId);
-    const check = validateCareSplitPrice(tier, {
+    const check = validateCareSplitPrice("interviews", {
       unit_amount: price.unit_amount,
       currency: price.currency,
       recurring: price.recurring,
@@ -67,7 +58,7 @@ export async function POST(request: NextRequest) {
       line_items: [{ price: priceId, quantity: 1 }],
       success_url: `${origin}/care-split/checkout/return?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/care-split#pricing`,
-      metadata: { product: "care-split", tier },
+      metadata: { product: "care-split", tier: "interviews" },
     });
 
     return NextResponse.json({ url: session.url });

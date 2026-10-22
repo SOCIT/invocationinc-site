@@ -3,7 +3,6 @@ import { readdirSync, readFileSync, statSync } from "node:fs";
 import { join } from "node:path";
 import test from "node:test";
 import { ACCOUNT_NUMBER_ERROR } from "./account-guard";
-import { HUMAN_REVIEW_SCOPE } from "./claims";
 import { buyerBlocks } from "./buyer-copy";
 import { buildReadAloud } from "./meeting";
 import { emptyChecks, toggleCheck } from "./only-child";
@@ -69,8 +68,9 @@ test("buyer copy matches the shipped text file", () => {
     .map((line) => line.trim())
     .filter(Boolean);
   assert.deepEqual(lines, fromFile);
-  assert.equal(file.includes(HUMAN_REVIEW_SCOPE), true);
-  assert.equal(file.includes("[" + "Scope of human review"), false);
+  assert.equal(file.includes("AI interview: $9.99. Includes five interviews."), true);
+  assert.equal(file.includes(["Human", "review"].join(" ")), false);
+  assert.equal(file.includes("[" + ["Scope of", "human", "review"].join(" ")), false);
 });
 
 test("banned strings are absent from shipped care-split copy", () => {
@@ -344,33 +344,39 @@ test("no attorney notice on any worksheet surface (2026-10-18 disclaimer purge)"
 
 test("stripe price checks match the locked amounts and reject recurring prices", () => {
   assert.deepEqual(
-    validateCareSplitPrice("interviews", { unit_amount: 2499, currency: "usd", recurring: null }),
+    validateCareSplitPrice("interviews", { unit_amount: 999, currency: "usd", recurring: null }),
     { ok: true },
   );
   assert.equal(
-    validateCareSplitPrice("interviews", { unit_amount: 999, currency: "usd", recurring: null }).ok,
-    false,
-  );
-  assert.equal(
-    validateCareSplitPrice("review", { unit_amount: 10000, currency: "usd", recurring: null }).ok,
-    true,
-  );
-  assert.equal(
-    validateCareSplitPrice("review", { unit_amount: 15000, currency: "usd", recurring: null }).ok,
-    true,
-  );
-  assert.equal(
-    validateCareSplitPrice("review", { unit_amount: 9900, currency: "usd", recurring: null }).ok,
+    validateCareSplitPrice("interviews", { unit_amount: 24_99, currency: "usd", recurring: null }).ok,
     false,
   );
   assert.equal(
     validateCareSplitPrice("interviews", {
-      unit_amount: 2499,
+      unit_amount: 999,
       currency: "usd",
       recurring: { interval: "month" },
     }).ok,
     false,
   );
+});
+
+test("care-split ships one interview price and no review tier", () => {
+  const files = [
+    ...walk(new URL("../../components/care-split", root).pathname),
+    ...walk(new URL("../../app/care-split", root).pathname),
+    ...walk(new URL("../../app/api/care-split", root).pathname),
+    ...walk(root.pathname),
+    new URL("../../../.env.example", root).pathname,
+  ].filter((file) => !file.endsWith(".test.mts"));
+  const corpus = files.map((file) => readFileSync(file, "utf8")).join("\n");
+  const reviewEnv = ["STRIPE_PRICE_CARE_SPLIT", "REVIEW"].join("_");
+  assert.equal(corpus.includes(reviewEnv), false);
+  assert.equal(corpus.includes(["24", "99"].join(".")), false);
+  assert.equal(corpus.includes(["Human", "review"].join(" ")), false);
+  assert.equal(corpus.includes(["human", "review"].join(" ")), false);
+  assert.equal(corpus.includes("STRIPE_PRICE_CARE_SPLIT_INTERVIEWS"), true);
+  assert.equal(corpus.includes("$9.99"), true);
 });
 
 test("an interview file from an unknown id does not grant credits or a record", () => {
