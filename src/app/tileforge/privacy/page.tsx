@@ -16,7 +16,7 @@ export default function TileforgePrivacyPage() {
           <Link href="/">Home</Link> / Tileforge / Privacy
         </p>
         <h1>Tileforge Privacy Policy</h1>
-        <p>Last updated: October 19, 2026</p>
+        <p>Last updated: October 22, 2026</p>
         <p>
           <strong>Who we are.</strong> Tileforge makes small, free puzzle
           games, including Tilebright. This policy covers every Tileforge
@@ -51,8 +51,9 @@ export default function TileforgePrivacyPage() {
           precise location.
         </p>
         <p>
-          <strong>Children.</strong> Our games are general-audience puzzles
-          and are not directed at children under 13.
+          <strong>Children.</strong> Tileforge games are made for adults
+          (18+). They are not directed at children, and we do not knowingly
+          collect data from children.
         </p>
         <p>
           <strong>Your choices.</strong> There is no account to delete and
