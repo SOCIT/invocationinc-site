@@ -1,8 +1,8 @@
 // Buyer-facing copy for /care-split.
-// Source: issue #4 comment 1, verbatim, with two approved substitutions:
-// the human-review placeholder is HUMAN_REVIEW_SCOPE, and the product
-// name token is WHEN (issue comment 4). The first mention on this page
-// is "WHEN — Who Handles Each Need". Do not rewrite these strings.
+// Source: issue #4 comment 1, verbatim, with the product name token WHEN
+// (issue comment 4). The first mention on this page is
+// "WHEN — Who Handles Each Need". The paid tier is the flat $9.99
+// interview price. Do not rewrite these strings.
 
 export type CopyBlock =
   | { kind: "h1"; text: string }
@@ -123,11 +123,7 @@ export const buyerBlocks: CopyBlock[] = [
   },
   {
     "kind": "li",
-    "text": "AI interview: $24.99. Includes five interviews."
-  },
-  {
-    "kind": "li",
-    "text": "Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity."
+    "text": "AI interview: $9.99. Includes five interviews."
   },
   {
     "kind": "p",

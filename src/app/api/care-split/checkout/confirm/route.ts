@@ -1,17 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getStripe } from "@/lib/stripe";
 import {
+  INTERVIEW_PACK_SIZE,
+  INTERVIEW_PRICE_ENV,
   validateCareSplitPrice,
-  type CareSplitTier,
 } from "@/lib/care-split/stripe-price";
 
 export const runtime = "nodejs";
-
-function priceEnv(tier: CareSplitTier) {
-  return tier === "interviews"
-    ? process.env.STRIPE_PRICE_CARE_SPLIT_INTERVIEWS
-    : process.env.STRIPE_PRICE_CARE_SPLIT_REVIEW;
-}
 
 export async function POST(request: NextRequest) {
   let sessionId = "";
@@ -35,11 +30,10 @@ export async function POST(request: NextRequest) {
 
   try {
     const session = await stripe.checkout.sessions.retrieve(sessionId);
-    const tier = session.metadata?.tier;
     if (
       session.metadata?.product !== "care-split" ||
       session.mode !== "payment" ||
-      (tier !== "interviews" && tier !== "review")
+      session.metadata?.tier !== "interviews"
     ) {
       return NextResponse.json({ error: "That payment is not for WHEN." }, { status: 400 });
     }
@@ -47,7 +41,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Payment is not complete." }, { status: 402 });
     }
 
-    const expected = priceEnv(tier);
+    const expected = process.env[INTERVIEW_PRICE_ENV];
     const lineItems = await stripe.checkout.sessions.listLineItems(sessionId, { limit: 1 });
     const price = lineItems.data[0]?.price;
     const priceId = typeof price === "string" ? price : price?.id;
@@ -55,7 +49,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "The paid price does not match WHEN." }, { status: 400 });
     }
 
-    const check = validateCareSplitPrice(tier, {
+    const check = validateCareSplitPrice("interviews", {
       unit_amount: price.unit_amount,
       currency: price.currency,
       recurring: price.recurring,
@@ -65,9 +59,9 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json({
-      tier,
+      tier: "interviews",
       sessionId,
-      interviews: tier === "interviews" ? 5 : 0,
+      interviews: INTERVIEW_PACK_SIZE,
     });
   } catch (err) {
     const message = err instanceof Error ? err.message : "";

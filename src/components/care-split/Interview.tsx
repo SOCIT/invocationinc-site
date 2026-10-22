@@ -25,8 +25,7 @@ import { CreditLine } from "./CreditLine";
 
 const PRICE_LINES = [
   "WHEN's core offering is free.",
-  "The AI interview tier costs $24.99 and includes five interviews.",
-  "A tier priced at $100 or more adds human review.",
+  "The AI interview tier costs $9.99 and includes five interviews.",
 ];
 
 export function InterviewHome() {
