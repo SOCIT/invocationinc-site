@@ -70,12 +70,6 @@ export function WorksheetView({ surface }: { surface: WorksheetSurface }) {
               <p>{sheet.respiteLine}</p>
               <h2>Suggested check-ins</h2>
               <p>{sheet.suggestedCheckIns}</p>
-              {sheet.poaRedFlag && sheet.poaRedFlagText && (
-                <aside className="cs-flag" role="status">
-                  <h2>Elder-law attorney review flag</h2>
-                  <p>{sheet.poaRedFlagText}</p>
-                </aside>
-              )}
               {CLAIMS.benefits.map((line) => (
                 <p key={line}>{line}</p>
               ))}

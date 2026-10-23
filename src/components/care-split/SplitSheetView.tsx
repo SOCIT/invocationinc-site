@@ -131,15 +131,6 @@ export function SplitSheetView() {
             </>
           )}
 
-          <div data-poa-flag={sheet.poaRedFlag ? "on" : "off"}>
-            {sheet.poaRedFlag && sheet.poaRedFlagText && (
-              <aside className="cs-flag" role="status">
-                <h2>Elder-law attorney review flag</h2>
-                <p>{sheet.poaRedFlagText}</p>
-              </aside>
-            )}
-          </div>
-
           {CLAIMS.limits.map((line) => (
             <p key={line}>{line}</p>
           ))}
