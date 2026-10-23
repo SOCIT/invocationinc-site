@@ -6,7 +6,6 @@ export const SECTION_ORDER = [
   "steps",
   "approval",
   "pricing",
-  "guardrails",
   "only-child",
   "scripts",
 ] as const;
@@ -28,7 +27,6 @@ function sectionFor(block: CopyBlock, existing: CopySection[]): SectionId | null
   if (text === "How it works") return "steps";
   if (text.startsWith("What you approve")) return "approval";
   if (text === "Pricing") return "pricing";
-  if (text.startsWith("What WHEN is")) return "guardrails";
   if (text.includes("Only Child Test")) return "only-child";
   if (text.includes("Three Hard-Moment")) return "scripts";
   return null;

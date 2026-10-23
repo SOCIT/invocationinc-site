@@ -111,7 +111,7 @@ export const lessons: Lesson[] = [
     applicationLabel:
       "Application exercise. The caregiver's own state. The Third Bell is Jonah's extension, not content from How to Like People or Eight Weeks to Happy.",
     application: [
-      "You set the Third Bell, Jonah's extension, on your own state: genuine sadness on command, then the return to neutral in the same breath. You do not use it to determine the cause of a person's behavior.",
+      "You set the Third Bell, Jonah's extension, on your own state: genuine sadness on command, then the return to neutral in the same breath.",
     ],
     script: ['Say to yourself first: "I can be sad with them for a minute. Then I come back to neutral."'],
     quiz: [
@@ -167,7 +167,7 @@ export const lessons: Lesson[] = [
     applicationLabel: "Application exercise. Accusations of stealing or lying.",
     application: [
       "Your father says you took his wallet. You didn't. You feel the sting of being accused.",
-      "Applying the mechanic: you give them the 4%. Most of the spoken part stays with him. Your pause is not rejection. You do not decide why he said it.",
+      "Applying the mechanic: you give them the 4%. Most of the spoken part stays with him. Your pause is not rejection.",
     ],
     script: ['"I\'m here. I\'ll listen."'],
     quiz: [
@@ -199,7 +199,7 @@ export const lessons: Lesson[] = [
           { id: "c", text: "Decide why they made the accusation" },
         ],
         answer:
-          "Answer: a. Option b aims at a particular response. Option c would determine the cause of a person's behavior, which this product does not do.",
+          "Answer: a. Option b aims at a particular response.",
       },
       {
         id: "q3",
@@ -279,7 +279,7 @@ export const lessons: Lesson[] = [
     applicationLabel: "Application exercise. Sundowning agitation.",
     application: [
       'It\'s late afternoon. Your father is restless and pacing. You\'ve had a long day, and when you say, "Dad, please calm down," your voice is tight.',
-      "Applying the mechanic: before your words, your own state is part of what the room experiences. You notice your state first. You don't try to decide why he's restless, because this product does not determine the cause of a person's behavior.",
+      "Applying the mechanic: before your words, your own state is part of what the room experiences. You notice your state first.",
     ],
     script: [
       'Say to yourself first: "I\'m tense, and that\'s part of this room." Then say to him: "I\'m here. I\'m going to sit down next to you."',
@@ -304,7 +304,7 @@ export const lessons: Lesson[] = [
           { id: "c", text: 'Say "calm down" more firmly' },
         ],
         answer:
-          "Answer: b. Noticing your own state is within your reach. Determining the cause of someone's behavior is not something this product does.",
+          "Answer: b. Noticing your own state is within your reach.",
       },
       {
         id: "q3",

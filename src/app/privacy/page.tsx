@@ -16,10 +16,7 @@ export default function PrivacyPage() {
           <Link href="/">Home</Link> / Privacy
         </p>
         <h1>Privacy Policy</h1>
-        <p>
-          Stub policy for Invocation Inc. Replace with counsel-reviewed text
-          before launch.
-        </p>
+        <p>Stub policy for Invocation Inc.</p>
         <p>
           This hub site links out to our product sites, where purchases are
           processed. We collect minimal information here. We do not sell your
