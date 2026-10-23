@@ -16,10 +16,7 @@ export default function TermsPage() {
           <Link href="/">Home</Link> / Terms
         </p>
         <h1>Terms of Use</h1>
-        <p>
-          Stub terms for Invocation Inc. Replace with counsel-reviewed text
-          before launch.
-        </p>
+        <p>Stub terms for Invocation Inc.</p>
         <Footer />
       </main>
     </>

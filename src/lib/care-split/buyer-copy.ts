@@ -130,6 +130,10 @@ export const buyerBlocks: CopyBlock[] = [
     "text": "Human review: $100 or more. Adds human review. A person on our team reads your completed Split Sheet before your family meeting and checks it for gaps — a task with no owner, a backup who was never named, a review date that never got set — and sends it back with notes. Human review is an extra set of eyes on completeness and clarity."
   },
   {
+    "kind": "p",
+    "text": "WHEN helps families plan and coordinate care."
+  },
+  {
     "kind": "h2",
     "text": "Part 2: The Only Child Test"
   },

@@ -135,7 +135,6 @@ textarea:focus-visible {
 }
 
 .cs-card,
-.cs-attorney,
 .cs-flag,
 .cs-doc,
 textarea {
@@ -144,7 +143,6 @@ textarea {
 }
 
 .cs-card,
-.cs-attorney,
 .cs-flag {
   background: #fffaf2;
   padding: 16px;
@@ -153,17 +151,6 @@ textarea {
 
 .cs-card {
   border: 1px solid #d7cbb8;
-}
-
-.cs-attorney {
-  border: 3px solid #140e0c;
-}
-
-.cs-attorney-title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 900;
-  letter-spacing: 0.03em;
-  margin: 0 0 10px;
 }
 
 .cs-flag {

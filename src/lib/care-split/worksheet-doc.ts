@@ -12,7 +12,7 @@ export function buildWorksheetDocument(input: {
   lines.push(...CLAIMS.pca);
   lines.push("");
   if (input.surface === "cover") {
-    lines.push("Educational Personal Care Agreement preparation worksheet.");
+    lines.push("Personal Care Agreement preparation worksheet.");
     return lines.join("\n");
   }
   lines.push("Reported tasks and hours");

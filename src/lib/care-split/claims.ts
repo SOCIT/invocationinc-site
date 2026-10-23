@@ -12,10 +12,10 @@ export const CLAIMS = {
   "benefits": [],
   "tax": [],
   "research": [
-    "Any published caregiving statistic will identify its source, publication date, population, and relevant definition. Any commercial-care cost comparison will identify the source year, geographic scope, type of service, and calculation assumptions. Estimates will not be presented as guaranteed savings or as the financial result of using WHEN."
+    "Any published caregiving statistic will identify its source, publication date, population, and relevant definition. Any commercial-care cost comparison will identify the source year, geographic scope, type of service, and calculation assumptions."
   ],
   "pricing": [
-    "WHEN's core offering is free. The AI interview tier costs $24.99 and includes five interviews. A tier priced at $100 or more adds human review. The scope of human review will be described accurately and will not be represented as legal advice or a guarantee of any outcome unless the service is separately and appropriately established for that purpose."
+    "WHEN's core offering is free. The AI interview tier costs $24.99 and includes five interviews. A tier priced at $100 or more adds human review."
   ],
   "commitments": [],
   "limits": []
