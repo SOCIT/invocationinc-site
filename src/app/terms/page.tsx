@@ -20,13 +20,6 @@ export default function TermsPage() {
           Stub terms for Invocation Inc. Replace with counsel-reviewed text
           before launch.
         </p>
-        <p>
-          Content on this site and our programs is educational and
-          personal-development material. It is{" "}
-          <strong>not medical, legal, or therapeutic advice</strong>. Invocation
-          Inc is not a licensed medical or therapy practice. If you need a
-          clinician, get one.
-        </p>
         <Footer />
       </main>
     </>
